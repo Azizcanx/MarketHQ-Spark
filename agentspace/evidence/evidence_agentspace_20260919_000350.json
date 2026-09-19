@@ -1,0 +1,11 @@
+{
+  "run_id": "agentspace_20260919_000350",
+  "task": "Fork exec test3",
+  "exit_code": 2,
+  "stdout": [],
+  "stderr": [
+    "/usr/bin/python3: can't open file '/home/markethq/.hermes/hermes-agent/hermes': [Errno 13] Permission denied",
+    ""
+  ],
+  "timestamp": "2026-09-19T00:03:50.358576"
+}

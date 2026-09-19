@@ -1,0 +1,14 @@
+# MarketHQ Python research/read-only backend dependencies.
+# Keep this file limited to third-party packages imported by the repository's
+# active Python research, backtest, validation, and dashboard paths.
+
+numpy>=1.26,<3
+pandas>=2.0,<3
+yfinance>=0.2,<1
+scipy>=1.11,<2
+polars>=1,<2
+rich>=13,<15
+vectorbt>=0.26,<1
+requests>=2.31,<3
+python-dotenv>=1.0,<2
+openai>=1.0,<3

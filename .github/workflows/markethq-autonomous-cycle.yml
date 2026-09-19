@@ -1,0 +1,42 @@
+name: MarketHQ Autonomous Cycle
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  trigger:
+    # Manual dispatch is always runnable for diagnostics; scheduled runs stay gated by the repository variable.
+    if: ${{ github.event_name == 'workflow_dispatch' || vars.MARKETHQ_AUTONOMOUS_SCHEDULER_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Validate scheduler configuration
+        env:
+          AUTOMATION_URL: ${{ secrets.MARKETHQ_AUTOMATION_URL }}
+          AUTOMATION_SECRET: ${{ secrets.MARKETHQ_AUTOMATION_SECRET }}
+        run: |
+          set -euo pipefail
+          test -n "${AUTOMATION_URL:-}" || { echo "MARKETHQ_AUTOMATION_URL is required."; exit 1; }
+          test -n "${AUTOMATION_SECRET:-}" || { echo "MARKETHQ_AUTOMATION_SECRET is required."; exit 1; }
+          case "${AUTOMATION_URL}" in
+            https://*) ;;
+            *) echo "MARKETHQ_AUTOMATION_URL must use HTTPS."; exit 1 ;;
+          esac
+
+      - name: Trigger bounded autonomous cycle
+        env:
+          AUTOMATION_URL: ${{ secrets.MARKETHQ_AUTOMATION_URL }}
+          AUTOMATION_SECRET: ${{ secrets.MARKETHQ_AUTOMATION_SECRET }}
+        run: |
+          set -euo pipefail
+          curl --fail-with-body --silent --show-error \
+            --request POST \
+            --header 'content-type: application/json' \
+            --header "x-markethq-automation-secret: ${AUTOMATION_SECRET}" \
+            --data '{"maxIterations":10}' \
+            "${AUTOMATION_URL%/}/api/automation/cycle"

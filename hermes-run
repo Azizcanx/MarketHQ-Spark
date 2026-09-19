@@ -1,0 +1,9 @@
+#!/opt/markethq/hermes-agent/venv/bin/python
+import sys, os
+os.environ.pop("PYTHONPATH", None)
+os.environ.pop("PYTHONHOME", None)
+os.environ["HERMES_HOME"] = "/opt/markethq/hermes-agent"
+sys.path.insert(0, '/opt/markethq/hermes-agent')
+sys.path.insert(0, '/opt/markethq/hermes-agent/venv/lib/python3.12/site-packages')
+from hermes_cli.main import main
+main()

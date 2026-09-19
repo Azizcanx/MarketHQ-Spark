@@ -1,0 +1,32 @@
+{
+  "run_id": "agentspace_20260919_034022",
+  "task": "merhaba, burasi test mesaj",
+  "exit_code": 0,
+  "stdout": [
+    "Warning: Unknown toolsets: mcp-codegraph",
+    "Query: [Context: Session:        20260919_033819_8d5bcc Title:          ",
+    "[Context: Recursion guard: skip.] sistem durumu… Duration:       10s Messages:  ",
+    "4 (1 user, 2 tool calls) ] merhaba, burasi test mesaj",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "Merhaba! Test mesajı geldi, her şey yolunda. 👋",
+    "",
+    "Sistem aktif, MarketHQ VPS'de çalışıyorum. Nasıl yardımcı olabilirim?",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260919_034014_5ea67d",
+    "  hermes -c \"[Context: Session: 20260919_033819_8d5bcc…\"",
+    "",
+    "Session:        20260919_034014_5ea67d",
+    "Title:          [Context: Session: 20260919_033819_8d5bcc…",
+    "Duration:       7s",
+    "Messages:       2 (1 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-19T03:40:22.780368"
+}

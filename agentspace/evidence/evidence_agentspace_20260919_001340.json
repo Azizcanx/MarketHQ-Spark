@@ -1,0 +1,11 @@
+{
+  "run_id": "agentspace_20260919_001340",
+  "task": "Wrapper test",
+  "exit_code": 2,
+  "stdout": [],
+  "stderr": [
+    "/usr/bin/python3: can't open file '/tmp/hermes-run': [Errno 2] No such file or directory",
+    ""
+  ],
+  "timestamp": "2026-09-19T00:13:40.355140"
+}

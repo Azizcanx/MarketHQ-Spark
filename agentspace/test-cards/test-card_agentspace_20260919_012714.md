@@ -1,0 +1,44 @@
+# AgentSpace Test Card
+
+**Run ID:** `agentspace_20260919_012714`
+
+**Task:** Test mesaj
+
+**Timestamp:** 2026-09-19T01:27:14.854288
+
+**Exit Code:** `0`
+
+
+
+## Output Summary
+
+**Stdout lines:** 24
+
+**Output preview:**
+> Initializing agent...
+> ────────────────────────────────────────
+> 
+> ⚠ Auxiliary title generation failed: HTTP 400: This request is not valid. Check the model name and other parameters. Additional info: Provider returned error
+> 
+> ╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+> Working. That message looks like a session context note followed by a test — "Test mesaj" (Turkish for "test message"). 
+> 
+> If you have an actual task, drop it here and I'll get to work.
+> ╰──────────────────────────────────────────────────────────────────────────────╯
+> 
+> Resume this session with:
+>   hermes --resume 20260919_012705_37942c
+>   hermes -c "[Context: Session: 20260919_012639_5d9a68… #2"
+> 
+> Session:        20260919_012705_37942c
+> Title:          [Context: Session: 20260919_012639_5d9a68… #2
+> Duration:       8s
+> Messages:       2 (1 user, 0 tool calls)
+> 
+
+
+## Evidence
+
+- Evidence JSON: `/opt/markethq/agentspace/evidence/evidence_agentspace_20260919_012714.json`
+
+- Test Card: `None`

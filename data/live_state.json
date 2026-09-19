@@ -1,0 +1,14 @@
+{
+  "last_run": "2026-09-18T01:19:28.476298+00:00",
+  "symbols_processed": [
+    "THYAO.IS",
+    "AAPL",
+    "BTC-USD",
+    "EURUSD=X"
+  ],
+  "opportunities_count": 8,
+  "setups_count": 8,
+  "claims_count": 8,
+  "ai_requests_count": 12,
+  "errors": []
+}

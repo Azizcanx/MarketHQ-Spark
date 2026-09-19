@@ -1,0 +1,649 @@
+﻿{
+    "success":  true,
+    "runId":  "orchestrator-1788818115609",
+    "status":  "COMPLETED",
+    "mode":  "RESEARCH_ONLY",
+    "execution":  {
+                      "order":  [
+                                    "market-data",
+                                    "strategy",
+                                    "backtest",
+                                    "validation",
+                                    "evidence",
+                                    "brain",
+                                    "learning",
+                                    "research-decision",
+                                    "research-queue",
+                                    "research-date-resolver",
+                                    "experiment-generator",
+                                    "experiment-runner",
+                                    "result-ingestion",
+                                    "validation",
+                                    "learning",
+                                    "research-decision"
+                                ],
+                      "completed":  [
+                                        "market-data",
+                                        "strategy",
+                                        "backtest",
+                                        "validation",
+                                        "evidence",
+                                        "brain",
+                                        "learning",
+                                        "research-decision",
+                                        "research-queue",
+                                        "research-date-resolver",
+                                        "experiment-generator",
+                                        "experiment-runner",
+                                        "result-ingestion",
+                                        "validation",
+                                        "learning",
+                                        "research-decision"
+                                    ],
+                      "failed":  [
+
+                                 ],
+                      "skipped":  [
+
+                                  ]
+                  },
+    "research":  {
+                     "decision":  {
+                                      "agent":  "research-decision",
+                                      "runId":  "orchestrator-1788818115609",
+                                      "strategyId":  "STR-43839FA9C6",
+                                      "strategyName":  "KÄ±sa ve Uzun Vadeli Hareketli Ortalama YukarÄ± KesiÅim Stratejisi",
+                                      "decision":  {
+                                                       "decision":  "WEAK_RESEARCH_CANDIDATE",
+                                                       "action":  "RESEARCH_MORE_OR_DEPRIORITIZE",
+                                                       "decisionBasis":  "EVIDENCE_INCOMPLETE",
+                                                       "compositeScore":  0.4198,
+                                                       "decisionConfidence":  0.6416,
+                                                       "strategyReviewVerdict":  "INSUFFICIENT",
+                                                       "strategyReviewScore":  0.36,
+                                                       "crossSymbolRatio":  0.5625,
+                                                       "costRobustness":  0.3125,
+                                                       "parameterStability":  0.3438,
+                                                       "regimeStability":  0.4063,
+                                                       "independentHoldoutRatio":  0.4219,
+                                                       "independentFullRunRatio":  0.5833,
+                                                       "runnerResearchValidationStatus":  "UNKNOWN",
+                                                       "runnerOverfittingStatus":  "UNKNOWN",
+                                                       "runnerOverfittingRiskScore":  null,
+                                                       "wfoEvidenceQuality":  "UNKNOWN",
+                                                       "wfoPositiveRatio":  null,
+                                                       "wfoNegativeRatio":  null,
+                                                       "wfoResolvedRatio":  null,
+                                                       "wfoInconclusiveShare":  null,
+                                                       "reasons":  [
+                                                                       "Independent strategy evidence remains insufficient.",
+                                                                       "Cross-symbol success ratio is only 56.25%.",
+                                                                       "Cost robustness is only 31.25%.",
+                                                                       "Parameter stability is only 34.38%.",
+                                                                       "Regime stability is only 40.63%.",
+                                                                       "Independent holdout positive ratio is only 42.19%."
+                                                                   ],
+                                                       "nextResearchQuestion":  "Can a fresh independent historical slice reproduce the strategy edge while preserving the same rule definition, cost model and regime robustness?"
+                                                   },
+                                      "sourceInputs":  {
+                                                           "validation":  {
+                                                                              "agent":  "validation",
+                                                                              "runId":  "orchestrator-1788818115609",
+                                                                              "strategyId":  "STR-43839FA9C6",
+                                                                              "strategyName":  "KÄ±sa ve Uzun Vadeli Hareketli Ortalama YukarÄ± KesiÅim Stratejisi",
+                                                                              "validation":  "[truncated: response depth]",
+                                                                              "ranking":  "[truncated: response depth]",
+                                                                              "researchValidation":  "[truncated: response depth]",
+                                                                              "researchValidationStatus":  "PASS",
+                                                                              "runnerValidation":  "[truncated: repeated/circular reference]",
+                                                                              "pipelineData":  "[truncated: response depth]",
+                                                                              "strategyInput":  "[truncated: response depth]",
+                                                                              "backtestInput":  "[truncated: response depth]",
+                                                                              "previousAgentState":  "[truncated: response depth]",
+                                                                              "researchContext":  "[truncated: response depth]",
+                                                                              "note":  "Bu ajan mevcut MarketHQ araÅtÄ±rma ranking metriklerini korur ve Experiment Runner\u0027Ä±n gerÃ§ek researchExecution sonucunu ayrÄ±ca yapÄ±sal olarak doÄrular. Runner validation PASS yalnÄ±zca araÅtÄ±rma yÃ¼rÃ¼tmesinin, backtest sonucunun, maliyet modelinin, tarih kapsamÄ±nÄ±n ve izlenebilirliÄin doÄrulandÄ±ÄÄ±nÄ± ifade eder; stratejinin kÃ¢rlÄ± olduÄu anlamÄ±na gelmez. VeritabanÄ±na yazmaz ve broker iÅlemi gerÃ§ekleÅtirmez.",
+                                                                              "mode":  "READ_ONLY_VALIDATION_V2",
+                                                                              "collectedAt":  "2026-09-07T21:55:27.760Z"
+                                                                          },
+                                                           "evidence":  {
+                                                                            "agent":  "evidence",
+                                                                            "runId":  "orchestrator-1788818115609",
+                                                                            "strategyId":  "STR-43839FA9C6",
+                                                                            "strategyName":  "KÄ±sa ve Uzun Vadeli Hareketli Ortalama YukarÄ± KesiÅim Stratejisi",
+                                                                            "evidenceData":  "[truncated: response depth]",
+                                                                            "validationInput":  "[truncated: response depth]",
+                                                                            "backtestInput":  "[truncated: repeated/circular reference]",
+                                                                            "strategyInput":  "[truncated: repeated/circular reference]",
+                                                                            "marketDataInput":  "[truncated: repeated/circular reference]",
+                                                                            "previousAgentState":  "[truncated: response depth]",
+                                                                            "researchContext":  "[truncated: response depth]",
+                                                                            "mode":  "READ_ONLY_EVIDENCE",
+                                                                            "note":  "Bu ajan mevcut MarketHQ araÅtÄ±rma kanÄ±tlarÄ±nÄ± okur ve sonraki Brain katmanÄ±na aktarÄ±labilecek hale getirir. VeritabanÄ±na yazmaz ve broker iÅlemi gerÃ§ekleÅtirmez.",
+                                                                            "collectedAt":  "2026-09-07T21:55:15.819Z"
+                                                                        },
+                                                           "learning":  {
+                                                                            "agent":  "learning",
+                                                                            "runId":  "orchestrator-1788818115609",
+                                                                            "strategyId":  "STR-43839FA9C6",
+                                                                            "strategyName":  "KÄ±sa ve Uzun Vadeli Hareketli Ortalama YukarÄ± KesiÅim Stratejisi",
+                                                                            "learningData":  "[truncated: response depth]",
+                                                                            "resultIngestionInput":  "[truncated: response depth]",
+                                                                            "ingestedResult":  "[truncated: response depth]",
+                                                                            "learningContext":  "[truncated: response depth]",
+                                                                            "researchMemory":  "[truncated: response depth]",
+                                                                            "memoryPersistenceDiagnostics":  "[truncated: response depth]",
+                                                                            "memoryPayload":  "[truncated: response depth]",
+                                                                            "brainInput":  "[truncated: response depth]",
+                                                                            "evidenceInput":  "[truncated: repeated/circular reference]",
+                                                                            "validationInput":  "[truncated: repeated/circular reference]",
+                                                                            "backtestInput":  "[truncated: repeated/circular reference]",
+                                                                            "strategyInput":  "[truncated: repeated/circular reference]",
+                                                                            "marketDataInput":  "[truncated: response depth]",
+                                                                            "previousAgentState":  "[truncated: response depth]",
+                                                                            "researchContext":  "[truncated: response depth]",
+                                                                            "mode":  "RESEARCH_STORAGE_MEMORY_V1",
+                                                                            "note":  "Bu ajan mevcut MarketHQ Ã¶Ärenme verilerini ve Result Ingestion tarafÄ±ndan normalize edilen deney sonuÃ§larÄ±nÄ± deÄerlendirir. SonuÃ§tan tÃ¼retilen kompakt araÅtÄ±rma hafÄ±zasÄ±nÄ± Research Storage V1 iÃ§indeki research_memory tablosuna yazar; orijinal strateji kurallarÄ±nÄ± deÄiÅtirmez ve broker iÅlemi gerÃ§ekleÅtirmez.",
+                                                                            "collectedAt":  "2026-09-07T21:55:27.952Z"
+                                                                        },
+                                                           "resultIngestion":  "[truncated: repeated/circular reference]",
+                                                           "resultIngestionSource":  "CURRENT_RESULT_INGESTION",
+                                                           "experimentRunner":  {
+                                                                                    "agent":  "experiment-runner",
+                                                                                    "runId":  "orchestrator-1788818115609",
+                                                                                    "strategyId":  "STR-43839FA9C6",
+                                                                                    "symbol":  "ASELS.IS",
+                                                                                    "timeframe":  "1d",
+                                                                                    "status":  "READY",
+                                                                                    "experiment":  "[truncated: response depth]",
+                                                                                    "readiness":  "[truncated: response depth]",
+                                                                                    "researchGates":  "[truncated: response depth]",
+                                                                                    "sourceResults":  "[truncated: repeated/circular reference]",
+                                                                                    "researchExecution":  "[truncated: response depth]",
+                                                                                    "safety":  "[truncated: response depth]",
+                                                                                    "storageContract":  "[truncated: response depth]",
+                                                                                    "mode":  "RESEARCH_EXPERIMENT_RUNNER_V3",
+                                                                                    "completedAt":  "2026-09-07T21:55:25.643Z"
+                                                                                },
+                                                           "selectedWfo":  {
+                                                                               "source":  "experiment-runner"
+                                                                           },
+                                                           "runnerResearchValidation":  {
+
+                                                                                        },
+                                                           "runnerOverfittingReview":  {
+
+                                                                                       },
+                                                           "review":  "[truncated: repeated/circular reference]",
+                                                           "previousAgentState":  {
+                                                                                      "market-data":  "[truncated: response depth]",
+                                                                                      "strategy":  "[truncated: response depth]",
+                                                                                      "backtest":  "[truncated: response depth]",
+                                                                                      "validation":  "[truncated: response depth]",
+                                                                                      "evidence":  "[truncated: response depth]",
+                                                                                      "brain":  "[truncated: response depth]",
+                                                                                      "learning":  "[truncated: response depth]",
+                                                                                      "research-decision":  "[truncated: response depth]",
+                                                                                      "research-queue":  "[truncated: response depth]",
+                                                                                      "research-date-resolver":  "[truncated: response depth]",
+                                                                                      "experiment-generator":  "[truncated: response depth]",
+                                                                                      "experiment-runner":  "[truncated: response depth]",
+                                                                                      "result-ingestion":  "[truncated: response depth]"
+                                                                                  }
+                                                       },
+                                      "evidenceQuality":  {
+                                                              "wfo":  "UNKNOWN",
+                                                              "wfoSource":  "experiment-runner",
+                                                              "resultIngestionSource":  "CURRENT_RESULT_INGESTION",
+                                                              "runnerResearchValidation":  "UNKNOWN",
+                                                              "overfittingReview":  "UNKNOWN",
+                                                              "confidencePenalty":  0.05,
+                                                              "confidenceBeforeRunnerAdjustment":  0.6916,
+                                                              "confidenceAfterRunnerAdjustment":  0.6416
+                                                          },
+                                      "decisionMatrix":  {
+                                                             "promisingRequires":  [
+                                                                                       "SUPPORTIVE_REVIEW",
+                                                                                       "RUNNER_VALIDATION_PASS",
+                                                                                       "WFO_SUFFICIENT_AND_SUPPORTIVE",
+                                                                                       "HOLDOUT_\u003e=_60_PERCENT",
+                                                                                       "CROSS_SYMBOL_\u003e=_60_PERCENT",
+                                                                                       "COST_ROBUSTNESS_\u003e=_50_PERCENT",
+                                                                                       "PARAMETER_STABILITY_\u003e=_50_PERCENT",
+                                                                                       "REGIME_STABILITY_\u003e=_50_PERCENT",
+                                                                                       "NO_HIGH_OVERFITTING_RISK"
+                                                                                   ],
+                                                             "currentDecisionBasis":  "EVIDENCE_INCOMPLETE",
+                                                             "robustnessFailureCount":  4,
+                                                             "wfoStrongNegative":  false,
+                                                             "wfoResolvedSupportive":  false
+                                                         },
+                                      "safety":  {
+                                                     "researchOnly":  true,
+                                                     "executionEnabled":  false,
+                                                     "databaseWriteEnabled":  false,
+                                                     "brokerExecutionEnabled":  false
+                                                 },
+                                      "mode":  "READ_ONLY_RESEARCH_DECISION",
+                                      "calculatedAt":  "2026-09-07T21:55:27.953Z"
+                                  },
+                     "queue":  {
+                                   "agent":  "research-queue",
+                                   "runId":  "orchestrator-1788818115609",
+                                   "strategyId":  "STR-43839FA9C6",
+                                   "symbol":  "ASELS.IS",
+                                   "timeframe":  "1d",
+                                   "market":  "BIST",
+                                   "dateScope":  {
+                                                     "selectionStatus":  "MISSING",
+                                                     "selectionSource":  "none",
+                                                     "startDate":  null,
+                                                     "endDate":  null,
+                                                     "validationStartDate":  null,
+                                                     "validationEndDate":  null,
+                                                     "holdoutStartDate":  null,
+                                                     "holdoutEndDate":  null,
+                                                     "independentSliceStartDate":  null,
+                                                     "independentSliceEndDate":  null,
+                                                     "exactDatesProvided":  false,
+                                                     "independentSliceProvided":  false,
+                                                     "generatedByQueue":  false
+                                                 },
+                                   "queue":  {
+                                                 "source":  "MarketHQ Brain research queue",
+                                                 "activeCount":  8,
+                                                 "visibleCount":  10,
+                                                 "queuedCount":  8,
+                                                 "workingCount":  0,
+                                                 "selectedTask":  {
+                                                                      "id":  398,
+                                                                      "question":  "Collect additional evidence: ASELS.IS | FIN_SYS_PUBLIC_BASELINE_V4_4_PURGED_RESEARCH | BIST | 1d | Can the original replay records for the moving-average crossover strategy be linked, including exact parameters, dates, entry and exit rules, costs, and symbol- or regime-level results, so the reported PF below 1 and negative PnL can be directly assessed?",
+                                                                      "reason":  "",
+                                                                      "priority":  8,
+                                                                      "targetNodeId":  null,
+                                                                      "targetClaimId":  null,
+                                                                      "status":  "queued",
+                                                                      "createdAt":  "2026-09-04T19:27:29+00:00",
+                                                                      "updatedAt":  "2026-09-04T19:27:29+00:00",
+                                                                      "metadata":  "[truncated: response depth]"
+                                                                  },
+                                                 "topTasks":  [
+                                                                  "[truncated: response depth]",
+                                                                  "[truncated: response depth]",
+                                                                  "[truncated: response depth]",
+                                                                  "[truncated: response depth]",
+                                                                  "[truncated: response depth]",
+                                                                  "[truncated: response depth]",
+                                                                  "[truncated: response depth]",
+                                                                  "[truncated: response depth]"
+                                                              ]
+                                             },
+                                   "decisionContext":  {
+                                                           "decision":  "WEAK_RESEARCH_CANDIDATE",
+                                                           "action":  "RESEARCH_MORE_OR_DEPRIORITIZE",
+                                                           "nextResearchQuestion":  "Can a fresh independent historical slice reproduce the strategy edge while preserving the same rule definition, cost model and regime robustness?"
+                                                       },
+                                   "feedback":  {
+                                                    "source":  "research-decision",
+                                                    "decision":  "MIXED",
+                                                    "action":  "RESEARCH_MORE_OR_DEPRIORITIZE",
+                                                    "nextResearchQuestion":  "Can a fresh independent historical slice reproduce the strategy edge while preserving the same rule definition, cost model and regime robustness?",
+                                                    "researchMode":  "TARGETED_IMPROVEMENT",
+                                                    "priorityAdjustment":  2,
+                                                    "reason":  "Evidence is incomplete; target the missing evidence before advancing the strategy."
+                                                },
+                                   "queuePolicy":  {
+                                                       "ordering":  "priority_desc_then_context_relevance_then_queue_id",
+                                                       "activeStatuses":  [
+                                                                              "queued",
+                                                                              "working"
+                                                                          ],
+                                                       "databaseWriteEnabled":  false,
+                                                       "queueMutation":  false,
+                                                       "executionEnabled":  false,
+                                                       "researchOnly":  true
+                                                   },
+                                   "safety":  {
+                                                  "researchOnly":  true,
+                                                  "executionEnabled":  false,
+                                                  "databaseWriteEnabled":  false,
+                                                  "brokerExecutionEnabled":  false
+                                              },
+                                   "mode":  "READ_ONLY_RESEARCH_QUEUE",
+                                   "calculatedAt":  "2026-09-07T21:55:15.915Z"
+                               },
+                     "dateScope":  {
+                                       "agent":  "research-date-resolver",
+                                       "runId":  "orchestrator-1788818115609",
+                                       "strategyId":  "STR-43839FA9C6",
+                                       "symbol":  "THYAO",
+                                       "timeframe":  "1d",
+                                       "market":  "BIST",
+                                       "status":  "READY",
+                                       "dateScope":  {
+                                                         "startDate":  "2023-09-04",
+                                                         "endDate":  "2026-09-04",
+                                                         "validationStartDate":  "2025-09-09",
+                                                         "validationEndDate":  "2026-03-05",
+                                                         "holdoutStartDate":  "2026-03-06",
+                                                         "holdoutEndDate":  "2026-09-04",
+                                                         "independentSliceStartDate":  "2026-03-06",
+                                                         "independentSliceEndDate":  "2026-09-04",
+                                                         "bars":  756,
+                                                         "trainBars":  504,
+                                                         "validationBars":  126,
+                                                         "holdoutBars":  126,
+                                                         "selectionStatus":  "RESOLVED",
+                                                         "selectionSource":  "research-data.availability:last_bars",
+                                                         "independenceStatus":  "CHRONOLOGICAL_HOLDOUT_UNVERIFIED_AGAINST_PRIOR_RUNS",
+                                                         "exactDatesProvided":  true,
+                                                         "independentSliceProvided":  true,
+                                                         "generatedByResolver":  true,
+                                                         "notes":  [
+                                                                       "Frozen chronological policy used 756 completed daily bars.",
+                                                                       "Dates were selected from data availability only; strategy performance was not inspected.",
+                                                                       "The independent slice is a chronological holdout and is not yet proven independent of prior historical strategy-selection activity."
+                                                                   ]
+                                                     },
+                                       "dataAvailability":  {
+                                                                "source":  "yfinance",
+                                                                "usableBars":  5000,
+                                                                "resolvedBars":  756,
+                                                                "firstAvailableDate":  "2007-02-26",
+                                                                "lastAvailableDate":  "2026-09-04"
+                                                            },
+                                       "policy":  {
+                                                      "lookbackBars":  756,
+                                                      "trainBars":  504,
+                                                      "validationBars":  126,
+                                                      "independentBars":  126,
+                                                      "selectionRule":  "Use the latest available completed daily bars; never inspect strategy performance when selecting dates."
+                                                  },
+                                       "sourceContext":  {
+                                                             "queueTaskId":  398,
+                                                             "decision":  "",
+                                                             "action":  "",
+                                                             "researchQuestion":  "Collect additional evidence: ASELS.IS | FIN_SYS_PUBLIC_BASELINE_V4_4_PURGED_RESEARCH | BIST | 1d | Can the original replay records for the moving-average crossover strategy be linked, including exact parameters, dates, entry and exit rules, costs, and symbol- or regime-level results, so the reported PF below 1 and negative PnL can be directly assessed?"
+                                                         },
+                                       "safety":  {
+                                                      "researchOnly":  true,
+                                                      "executionEnabled":  false,
+                                                      "databaseWriteEnabled":  false,
+                                                      "brokerExecutionEnabled":  false
+                                                  },
+                                       "mode":  "READ_ONLY_RESEARCH_DATE_RESOLUTION",
+                                       "calculatedAt":  "2026-09-07T21:55:16.050Z"
+                                   },
+                     "experiment":  {
+                                        "agent":  "experiment-generator",
+                                        "runId":  "orchestrator-1788818115609",
+                                        "experiment":  {
+                                                           "experimentId":  "EXP-STR43839FA9C6-Q398-1788818116050",
+                                                           "status":  "GENERATED",
+                                                           "researchQuestion":  "Collect additional evidence: ASELS.IS | FIN_SYS_PUBLIC_BASELINE_V4_4_PURGED_RESEARCH | BIST | 1d | Can the original replay records for the moving-average crossover strategy be linked, including exact parameters, dates, entry and exit rules, costs, and symbol- or regime-level results, so the reported PF below 1 and negative PnL can be directly assessed?",
+                                                           "hypothesis":  "Additional independent evidence should clarify whether the reported strategy result is reproducible and sufficiently traceable.",
+                                                           "source":  {
+                                                                          "queueTaskId":  398,
+                                                                          "sourceType":  "brain_research_queue",
+                                                                          "priority":  10,
+                                                                          "reason":  "Generated from the selected Research Queue task.",
+                                                                          "feedbackType":  null,
+                                                                          "decision":  "MIXED",
+                                                                          "action":  "RESEARCH_MORE_OR_DEPRIORITIZE",
+                                                                          "researchMode":  "TARGETED_IMPROVEMENT",
+                                                                          "priorityAdjustment":  2,
+                                                                          "feedbackReason":  "Evidence is incomplete; target the missing evidence before advancing the strategy."
+                                                                      },
+                                                           "strategy":  {
+                                                                            "strategyId":  "STR-43839FA9C6",
+                                                                            "name":  "KÄ±sa ve Uzun Vadeli Hareketli Ortalama YukarÄ± KesiÅim Stratejisi",
+                                                                            "ruleDefinition":  "Preserve the original strategy rule definition exactly as represented by the source strategy output.",
+                                                                            "parameters":  "[truncated: response depth]"
+                                                                        },
+                                                           "market":  {
+                                                                          "symbol":  "ASELS.IS",
+                                                                          "timeframe":  "1d"
+                                                                      },
+                                                           "dateScope":  {
+                                                                             "selectionStatus":  "RESOLVED",
+                                                                             "selectionSource":  "research-date-resolver:research-data.availability:last_bars",
+                                                                             "exactDatesRequired":  true,
+                                                                             "independentSliceRequired":  true,
+                                                                             "startDate":  "2023-09-04",
+                                                                             "endDate":  "2026-09-04",
+                                                                             "validationStartDate":  "2025-09-09",
+                                                                             "validationEndDate":  "2026-03-05",
+                                                                             "holdoutStartDate":  "2026-03-06",
+                                                                             "holdoutEndDate":  "2026-09-04",
+                                                                             "independentSliceStartDate":  "2026-03-06",
+                                                                             "independentSliceEndDate":  "2026-09-04",
+                                                                             "notes":  "[truncated: response depth]"
+                                                                         },
+                                                           "dataRequirements":  {
+                                                                                    "historicalDataRequired":  true,
+                                                                                    "exactDatesRequired":  true,
+                                                                                    "symbolResultsRequired":  true,
+                                                                                    "regimeResultsRequired":  true,
+                                                                                    "independentSliceRequired":  true
+                                                                                },
+                                                           "evaluation":  {
+                                                                              "trainTestHoldoutRequired":  true,
+                                                                              "costModelRequired":  true,
+                                                                              "slippageRequired":  true,
+                                                                              "robustnessChecksRequired":  true,
+                                                                              "evidenceTraceRequired":  true
+                                                                          },
+                                                           "successCriteria":  [
+                                                                                   "Original strategy rule definition remains unchanged.",
+                                                                                   "Historical inputs and experiment assumptions are fully traceable.",
+                                                                                   "The selected research question receives a direct and reproducible answer.",
+                                                                                   "Costs and slippage assumptions are explicitly represented.",
+                                                                                   "Results can be evaluated on independent data where required."
+                                                                               ],
+                                                           "failureCriteria":  [
+                                                                                   "Original rules cannot be reconstructed exactly.",
+                                                                                   "Required historical data or experiment provenance is missing.",
+                                                                                   "Results depend on undocumented parameter changes.",
+                                                                                   "The outcome cannot be independently reproduced or audited.",
+                                                                                   "Execution or broker integration is required.",
+                                                                                   "The reported result disappears under the specified cost model."
+                                                                               ],
+                                                           "constraints":  {
+                                                                               "researchOnly":  true,
+                                                                               "executionEnabled":  false,
+                                                                               "databaseWriteEnabled":  false,
+                                                                               "brokerExecutionEnabled":  false
+                                                                           }
+                                                       },
+                                        "dateScope":  {
+                                                          "selectionStatus":  "RESOLVED",
+                                                          "selectionSource":  "research-date-resolver:research-data.availability:last_bars",
+                                                          "independentSliceStartDate":  "2026-03-06",
+                                                          "independentSliceEndDate":  "2026-09-04",
+                                                          "exactDatesReady":  true,
+                                                          "notes":  "[truncated: repeated/circular reference]"
+                                                      },
+                                        "queueContext":  {
+                                                             "activeCount":  8,
+                                                             "selectedTask":  {
+                                                                                  "id":  398,
+                                                                                  "question":  "Collect additional evidence: ASELS.IS | FIN_SYS_PUBLIC_BASELINE_V4_4_PURGED_RESEARCH | BIST | 1d | Can the original replay records for the moving-average crossover strategy be linked, including exact parameters, dates, entry and exit rules, costs, and symbol- or regime-level results, so the reported PF below 1 and negative PnL can be directly assessed?",
+                                                                                  "reason":  "",
+                                                                                  "priority":  8,
+                                                                                  "targetNodeId":  null,
+                                                                                  "targetClaimId":  null,
+                                                                                  "status":  "queued",
+                                                                                  "createdAt":  "2026-09-04T19:27:29+00:00",
+                                                                                  "updatedAt":  "2026-09-04T19:27:29+00:00",
+                                                                                  "metadata":  "[truncated: response depth]"
+                                                                              },
+                                                             "selectionSource":  "research-queue"
+                                                         },
+                                        "dateResolverContext":  {
+                                                                    "status":  "READY",
+                                                                    "selectionSource":  "research-data.availability:last_bars"
+                                                                },
+                                        "decisionContext":  {
+                                                                "decision":  null,
+                                                                "action":  null,
+                                                                "nextResearchQuestion":  null
+                                                            },
+                                        "researchFeedback":  {
+                                                                 "feedbackType":  null,
+                                                                 "decision":  "MIXED",
+                                                                 "action":  "RESEARCH_MORE_OR_DEPRIORITIZE",
+                                                                 "researchMode":  "TARGETED_IMPROVEMENT",
+                                                                 "priorityAdjustment":  2,
+                                                                 "reason":  "Evidence is incomplete; target the missing evidence before advancing the strategy."
+                                                             },
+                                        "generationPolicy":  {
+                                                                 "preserveOriginalRules":  true,
+                                                                 "preserveResearchQuestion":  true,
+                                                                 "requireExplicitCosts":  true,
+                                                                 "requireIndependentValidation":  true,
+                                                                 "requireExplicitHistoricalDates":  true,
+                                                                 "requireIndependentSliceDates":  true,
+                                                                 "requireEvidenceTrace":  true,
+                                                                 "requireDateResolution":  true,
+                                                                 "dateResolutionAgent":  "research-date-resolver",
+                                                                 "consumeQueueFeedback":  true,
+                                                                 "feedbackGuidesResearchOnly":  true,
+                                                                 "feedbackMayMutateOriginalRules":  false,
+                                                                 "mutateQueue":  false,
+                                                                 "writeDatabase":  false
+                                                             },
+                                        "safety":  {
+                                                       "researchOnly":  true,
+                                                       "executionEnabled":  false,
+                                                       "databaseWriteEnabled":  false,
+                                                       "brokerExecutionEnabled":  false
+                                                   },
+                                        "mode":  "RESEARCH_EXPERIMENT_DEFINITION_ONLY",
+                                        "generatedAt":  "2026-09-07T21:55:16.050Z"
+                                    }
+                 },
+    "experiment":  {
+                       "strategyId":  "STR-43839FA9C6",
+                       "symbol":  "THYAO",
+                       "timeframe":  "1d",
+                       "status":  "COMPLETED",
+                       "durationMs":  9593,
+                       "metrics":  {
+
+                                   },
+                       "summary":  {
+                                       "status":  "COMPLETED",
+                                       "completed":  true,
+                                       "blocked":  false,
+                                       "succeeded":  true,
+                                       "result":  {
+                                                      "engine":  "MarketHQ Research Execution Adapter",
+                                                      "version":  "1.0.0",
+                                                      "status":  "COMPLETED",
+                                                      "runId":  "orchestrator-1788818115609",
+                                                      "experimentId":  "EXP-STR43839FA9C6-Q398-1788818116050",
+                                                      "researchQuestion":  "Collect additional evidence: ASELS.IS | FIN_SYS_PUBLIC_BASELINE_V4_4_PURGED_RESEARCH | BIST | 1d | Can the original replay records for the moving-average crossover strategy be linked, including exact parameters, dates, entry and exit rules, costs, and symbol- or regime-level results, so the reported PF below 1 and negative PnL can be directly assessed?",
+                                                      "strategy":  {
+                                                                       "strategyId":  "STR-43839FA9C6",
+                                                                       "name":  "KÄ±sa ve Uzun Vadeli Hareketli Ortalama YukarÄ± KesiÅim Stratejisi",
+                                                                       "ruleDefinition":  "Preserve the original strategy rule definition exactly as represented by the source strategy output.",
+                                                                       "parameters":  "[truncated: response depth]",
+                                                                       "normalizedSignalConfig":  "[truncated: response depth]",
+                                                                       "normalizedRiskConfig":  "[truncated: response depth]"
+                                                                   },
+                                                      "market":  {
+                                                                     "symbol":  "ASELS.IS",
+                                                                     "timeframe":  "1d"
+                                                                 },
+                                                      "dateScope":  {
+                                                                        "selectionStatus":  "RESOLVED",
+                                                                        "selectionSource":  "research-date-resolver:research-data.availability:last_bars",
+                                                                        "independentSliceStartDate":  "2026-03-06",
+                                                                        "independentSliceEndDate":  "2026-09-04",
+                                                                        "adapterSelectedDates":  false
+                                                                    },
+                                                      "data":  {
+                                                                   "bars":  126,
+                                                                   "actualStartDate":  "2026-03-06T00:00:00",
+                                                                   "actualEndDate":  "2026-09-04T00:00:00",
+                                                                   "interval":  "1d",
+                                                                   "source":  "get_bist_history"
+                                                               },
+                                                      "backtest":  {
+                                                                       "config":  "[truncated: response depth]",
+                                                                       "result":  "[truncated: response depth]"
+                                                                   },
+                                                      "execution":  {
+                                                                        "researchExecutionPerformed":  true,
+                                                                        "backtestExecuted":  true,
+                                                                        "brokerOrderPlaced":  false,
+                                                                        "databaseWritePerformed":  false
+                                                                    },
+                                                      "safety":  {
+                                                                     "researchOnly":  true,
+                                                                     "executionEnabled":  false,
+                                                                     "databaseWriteEnabled":  false,
+                                                                     "brokerExecutionEnabled":  false
+                                                                 },
+                                                      "startedAt":  "2026-09-07T21:55:16.728505+00:00",
+                                                      "completedAt":  "2026-09-07T21:55:25.506536+00:00",
+                                                      "exitCode":  0,
+                                                      "adapterPath":  "C:\\Users\\Ersin\\PycharmProjects\\MarketHQ\\agents\\research_execution_adapter_v1.py",
+                                                      "projectRoot":  "C:\\Users\\Ersin\\PycharmProjects\\MarketHQ",
+                                                      "stderr":  null
+                                                  }
+                                   }
+                   },
+    "safety":  {
+                   "researchOnly":  true,
+                   "executionEnabled":  false,
+                   "databaseWriteEnabled":  false,
+                   "brokerExecutionEnabled":  false,
+                   "brokerOrderPlaced":  false,
+                   "databaseWritePerformed":  false,
+                   "liveTradingAllowed":  false,
+                   "liveExecutionAllowed":  false
+               },
+    "pipeline":  {
+                     "architecture":  "Research Queue -\u003e Date Resolver -\u003e Experiment Generator -\u003e Experiment Runner -\u003e Result Ingestion -\u003e Learning -\u003e Research Decision",
+                     "phases":  [
+                                    {
+                                        "name":  "PHASE_1",
+                                        "purpose":  "Research preparation and independent experiment execution",
+                                        "agents":  [
+                                                       "market-data",
+                                                       "strategy",
+                                                       "backtest",
+                                                       "validation",
+                                                       "evidence",
+                                                       "brain",
+                                                       "learning",
+                                                       "research-decision",
+                                                       "research-queue",
+                                                       "research-date-resolver",
+                                                       "experiment-generator",
+                                                       "experiment-runner"
+                                                   ]
+                                    },
+                                    {
+                                        "name":  "PHASE_2",
+                                        "purpose":  "Post-run result ingestion, second validation, learning and research decision",
+                                        "agents":  [
+                                                       "result-ingestion",
+                                                       "validation",
+                                                       "learning",
+                                                       "research-decision"
+                                                   ]
+                                    }
+                                ],
+                     "validationRuns":  2,
+                     "resultIngestionRuns":  1,
+                     "learningRuns":  2,
+                     "researchDecisionRuns":  2,
+                     "postRunnerValidation":  true,
+                     "feedbackLoop":  true,
+                     "researchOnly":  true,
+                     "liveExecution":  false,
+                     "brokerExecution":  false,
+                     "databaseWrites":  false
+                 }
+}

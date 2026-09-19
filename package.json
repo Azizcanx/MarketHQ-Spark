@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@colbymchenry/codegraph": "^1.6.0"
+  }
+}

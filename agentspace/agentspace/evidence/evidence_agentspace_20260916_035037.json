@@ -1,0 +1,25 @@
+{
+  "run_id": "agentspace_20260916_035037",
+  "task": "Hello test --timeout 30",
+  "exit_code": 0,
+  "stdout": [
+    "Query: Hello test --timeout 30",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "Hello. No timeout needed for this response.",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260916_035038_e74e33",
+    "",
+    "Session:        20260916_035038_e74e33",
+    "Duration:       20s",
+    "Messages:       2 (1 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-16T03:51:00.067638"
+}

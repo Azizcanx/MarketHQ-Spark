@@ -1,0 +1,27 @@
+{
+  "run_id": "agentspace_20260916_015910",
+  "task": "Quick test",
+  "exit_code": 0,
+  "stdout": [
+    "Query: Quick test",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "System operational. How can I assist?",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260916_015911_d0248c",
+    "  hermes -c \"Quick test\"",
+    "",
+    "Session:        20260916_015911_d0248c",
+    "Title:          Quick test",
+    "Duration:       7s",
+    "Messages:       2 (1 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-16T01:59:19.446898"
+}

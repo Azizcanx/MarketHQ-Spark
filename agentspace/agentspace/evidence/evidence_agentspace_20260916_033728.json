@@ -1,0 +1,27 @@
+{
+  "run_id": "agentspace_20260916_033728",
+  "task": "burdamısın --timeout 10",
+  "exit_code": 0,
+  "stdout": [
+    "Query: burdamısın --timeout 10",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "Anladım. --timeout 10 parametresi not alınmıştır. Hermes Agent'da timeout ayarları nasıl yapılır?",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260916_033731_97c211",
+    "  hermes -c \"burdamısın --timeout 10\"",
+    "",
+    "Session:        20260916_033731_97c211",
+    "Title:          burdamısın --timeout 10",
+    "Duration:       8s",
+    "Messages:       2 (1 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-16T03:37:39.960111"
+}

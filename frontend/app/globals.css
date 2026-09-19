@@ -1,0 +1,192 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: #080a0f;
+  --foreground: #f3f5f7;
+  --card: #0d1118;
+  --card-foreground: #f3f5f7;
+  --popover: #0d1118;
+  --popover-foreground: #f3f5f7;
+  --primary: #f28a42;
+  --primary-foreground: #120b06;
+  --secondary: #151a22;
+  --secondary-foreground: #e9edf2;
+  --muted: #151a22;
+  --muted-foreground: #818b9a;
+  --accent: #161c24;
+  --accent-foreground: #f3f5f7;
+  --destructive: #ef6b68;
+  --border: #252c37;
+  --input: #252c37;
+  --ring: #f28a42;
+  --chart-1: #f28a42;
+  --chart-2: #58d68d;
+  --chart-3: #6ea8fe;
+  --chart-4: #c084fc;
+  --chart-5: #f6c453;
+  --radius: 0.75rem;
+  --sidebar: #090c11;
+  --sidebar-foreground: #d9dee6;
+  --sidebar-primary: #f28a42;
+  --sidebar-primary-foreground: #140c06;
+  --sidebar-accent: #151a22;
+  --sidebar-accent-foreground: #f3f5f7;
+  --sidebar-border: #202631;
+  --sidebar-ring: #f28a42;
+}
+
+.dark {
+  --background: #080a0f;
+  --foreground: #f3f5f7;
+  --card: #0d1118;
+  --card-foreground: #f3f5f7;
+  --popover: #0d1118;
+  --popover-foreground: #f3f5f7;
+  --primary: #f28a42;
+  --primary-foreground: #120b06;
+  --secondary: #151a22;
+  --secondary-foreground: #e9edf2;
+  --muted: #151a22;
+  --muted-foreground: #818b9a;
+  --accent: #161c24;
+  --accent-foreground: #f3f5f7;
+  --destructive: #ef6b68;
+  --border: #252c37;
+  --input: #252c37;
+  --ring: #f28a42;
+  --chart-1: #f28a42;
+  --chart-2: #58d68d;
+  --chart-3: #6ea8fe;
+  --chart-4: #c084fc;
+  --chart-5: #f6c453;
+  --sidebar: #090c11;
+  --sidebar-foreground: #d9dee6;
+  --sidebar-primary: #f28a42;
+  --sidebar-primary-foreground: #140c06;
+  --sidebar-accent: #151a22;
+  --sidebar-accent-foreground: #f3f5f7;
+  --sidebar-border: #202631;
+  --sidebar-ring: #f28a42;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans;
+    background: #080a0f;
+  }
+
+  body {
+    @apply min-h-screen bg-background text-foreground;
+    background: #080a0f;
+  }
+}
+
+/* Global focus ring for keyboard navigation */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(242, 138, 66, 0.35);
+}
+
+/* Smooth transitions for interactive elements */
+button, a, input, select, textarea {
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Legacy page shells are intentionally kept functional, but visually inherit the Agent OS surface. */
+.mhq-app .bg-slate-50 {
+  background-color: #080a0f !important;
+}
+
+.mhq-app .bg-white {
+  background-color: #0d1118 !important;
+}
+
+.mhq-app .bg-slate-100 {
+  background-color: #151a22 !important;
+}
+
+.mhq-app .bg-slate-900 {
+  background-color: #10151d !important;
+}
+
+.mhq-app .text-slate-950,
+.mhq-app .text-slate-900 {
+  color: #f3f5f7 !important;
+}
+
+.mhq-app .text-slate-800,
+.mhq-app .text-slate-700,
+.mhq-app .text-slate-600 {
+  color: #c2cad5 !important;
+}
+
+.mhq-app .text-slate-500,
+.mhq-app .text-slate-400,
+.mhq-app .text-slate-300 {
+  color: #818b9a !important;
+}
+
+.mhq-app .border-slate-200,
+.mhq-app .border-slate-300 {
+  border-color: #252c37 !important;
+}
+
+.mhq-app .hover\:bg-slate-100:hover {
+  background-color: #151a22 !important;
+}
+
+.mhq-app .hover\:bg-slate-900:hover {
+  background-color: #1b222c !important;
+}

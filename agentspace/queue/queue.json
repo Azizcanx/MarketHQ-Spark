@@ -1,0 +1,242 @@
+[
+  {
+    "id": "goal_20260919_022904",
+    "goal": "test check",
+    "priority": 1,
+    "status": "partial",
+    "created": "2026-09-19T02:29:04.926275",
+    "progress": [
+      {
+        "task": "test check",
+        "evaluation": "failed",
+        "exit_code": 1,
+        "strategy": "direct",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_022910",
+    "goal": "echo hello",
+    "priority": 1,
+    "status": "partial",
+    "created": "2026-09-19T02:29:10.002238",
+    "progress": [
+      {
+        "task": "echo hello",
+        "evaluation": "failed",
+        "exit_code": 1,
+        "strategy": "分解",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_023012",
+    "goal": "echo hello world",
+    "priority": 1,
+    "status": "running",
+    "created": "2026-09-19T02:30:12.856279",
+    "progress": []
+  },
+  {
+    "id": "goal_20260919_023205",
+    "goal": "simple check",
+    "priority": 1,
+    "status": "running",
+    "created": "2026-09-19T02:32:05.720359",
+    "progress": []
+  },
+  {
+    "id": "goal_20260919_023510",
+    "goal": "simple check",
+    "priority": 1,
+    "status": "running",
+    "created": "2026-09-19T02:35:10.907608",
+    "progress": []
+  },
+  {
+    "id": "goal_20260919_023604",
+    "goal": "echo hello",
+    "priority": 1,
+    "status": "running",
+    "created": "2026-09-19T02:36:04.216080",
+    "progress": []
+  },
+  {
+    "id": "goal_20260919_023723",
+    "goal": "echo hello",
+    "priority": 1,
+    "status": "running",
+    "created": "2026-09-19T02:37:23.898577",
+    "progress": []
+  },
+  {
+    "id": "goal_20260919_023934",
+    "goal": "echo hello",
+    "priority": 1,
+    "status": "running",
+    "created": "2026-09-19T02:39:34.076656",
+    "progress": []
+  },
+  {
+    "id": "goal_20260919_024159",
+    "goal": "echo hello",
+    "priority": 1,
+    "status": "partial",
+    "created": "2026-09-19T02:41:59.014570",
+    "progress": [
+      {
+        "task": "echo hello",
+        "evaluation": "partial",
+        "exit_code": 0,
+        "strategy": "decompose",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_024247",
+    "goal": "echo hello",
+    "priority": 1,
+    "status": "partial",
+    "created": "2026-09-19T02:42:47.932314",
+    "progress": [
+      {
+        "task": "echo hello",
+        "evaluation": "failed",
+        "exit_code": 1,
+        "strategy": "step_by_step",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_024256",
+    "goal": "test autonomous system",
+    "priority": 1,
+    "status": "completed",
+    "created": "2026-09-19T02:42:56.223300",
+    "progress": [
+      {
+        "task": "test autonomous system",
+        "evaluation": "success",
+        "exit_code": 0,
+        "strategy": "research_first",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_024520",
+    "goal": "test goal",
+    "priority": 1,
+    "status": "completed",
+    "created": "2026-09-19T02:45:20.854081",
+    "progress": [
+      {
+        "task": "test goal",
+        "evaluation": "success",
+        "exit_code": 0,
+        "strategy": "research_first",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_024600",
+    "goal": "test",
+    "priority": 1,
+    "status": "completed",
+    "created": "2026-09-19T02:46:00.472317",
+    "progress": [
+      {
+        "task": "test",
+        "evaluation": "success",
+        "exit_code": 0,
+        "strategy": "research_first",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_024621",
+    "goal": "test",
+    "priority": 1,
+    "status": "partial",
+    "created": "2026-09-19T02:46:21.558735",
+    "progress": [
+      {
+        "task": "test",
+        "evaluation": "failed",
+        "exit_code": 1,
+        "strategy": "research_first",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_024657",
+    "goal": "test final",
+    "priority": 1,
+    "status": "partial",
+    "created": "2026-09-19T02:46:57.088491",
+    "progress": [
+      {
+        "task": "test final",
+        "evaluation": "failed",
+        "exit_code": 124,
+        "strategy": "research_first",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_024707",
+    "goal": "test final",
+    "priority": 1,
+    "status": "partial",
+    "created": "2026-09-19T02:47:07.297259",
+    "progress": [
+      {
+        "task": "test final",
+        "evaluation": "failed",
+        "exit_code": 1,
+        "strategy": "research_first",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_024739",
+    "goal": "test final",
+    "priority": 1,
+    "status": "partial",
+    "created": "2026-09-19T02:47:39.075662",
+    "progress": [
+      {
+        "task": "test final",
+        "evaluation": "failed",
+        "exit_code": 1,
+        "strategy": "verify_first",
+        "iteration": 1
+      }
+    ]
+  },
+  {
+    "id": "goal_20260919_140004",
+    "goal": "test goal",
+    "priority": 1,
+    "status": "partial",
+    "created": "2026-09-19T14:00:04.050478",
+    "progress": [
+      {
+        "task": "test goal",
+        "evaluation": "partial",
+        "exit_code": 0,
+        "strategy": "direct",
+        "iteration": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-09-17T21:13:51.855385+00:00",
+  "decided": 36,
+  "strategies": {
+    "ema_trend_v1": {
+      "n": 28,
+      "hit_rate": 0.179,
+      "status": "DEMOTE",
+      "labels_needed": 0,
+      "by_regime": {
+        "DOWNTREND": {
+          "n": 17,
+          "hit_rate": 0.118
+        },
+        "UPTREND": {
+          "n": 5,
+          "hit_rate": 0.6
+        },
+        "RANGE": {
+          "n": 6,
+          "hit_rate": 0.0
+        }
+      }
+    },
+    "supertrend_v1": {
+      "n": 33,
+      "hit_rate": 0.394,
+      "status": "WATCH",
+      "labels_needed": 0,
+      "by_regime": {
+        "DOWNTREND": {
+          "n": 14,
+          "hit_rate": 0.143
+        },
+        "UPTREND": {
+          "n": 8,
+          "hit_rate": 0.75
+        },
+        "RANGE": {
+          "n": 11,
+          "hit_rate": 0.455
+        }
+      }
+    },
+    "adx_v1": {
+      "n": 23,
+      "hit_rate": 0.217,
+      "status": "DEMOTE",
+      "labels_needed": 0,
+      "by_regime": {
+        "DOWNTREND": {
+          "n": 12,
+          "hit_rate": 0.083
+        },
+        "RANGE": {
+          "n": 9,
+          "hit_rate": 0.444
+        },
+        "UPTREND": {
+          "n": 2,
+          "hit_rate": 0.0
+        }
+      }
+    },
+    "vwap_v1": {
+      "n": 31,
+      "hit_rate": 0.419,
+      "status": "WATCH",
+      "labels_needed": 0,
+      "by_regime": {
+        "DOWNTREND": {
+          "n": 17,
+          "hit_rate": 0.118
+        },
+        "UPTREND": {
+          "n": 8,
+          "hit_rate": 0.75
+        },
+        "RANGE": {
+          "n": 6,
+          "hit_rate": 0.833
+        }
+      }
+    },
+    "smc_structure_v1": {
+      "n": 16,
+      "hit_rate": 0.188,
+      "status": "DEMOTE",
+      "labels_needed": 0,
+      "by_regime": {
+        "DOWNTREND": {
+          "n": 10,
+          "hit_rate": 0.1
+        },
+        "UPTREND": {
+          "n": 4,
+          "hit_rate": 0.5
+        },
+        "RANGE": {
+          "n": 2,
+          "hit_rate": 0.0
+        }
+      }
+    },
+    "or_breakout_v1": {
+      "n": 6,
+      "hit_rate": 0.333,
+      "status": "WATCH",
+      "labels_needed": 0,
+      "by_regime": {
+        "DOWNTREND": {
+          "n": 5,
+          "hit_rate": 0.2
+        },
+        "RANGE": {
+          "n": 1,
+          "hit_rate": 1.0
+        }
+      }
+    },
+    "atr_breakout_v1": {
+      "n": 1,
+      "hit_rate": 0.0,
+      "status": "WATCH",
+      "labels_needed": 4,
+      "by_regime": {
+        "DOWNTREND": {
+          "n": 1,
+          "hit_rate": 0.0
+        }
+      }
+    }
+  },
+  "regimes": {
+    "DOWNTREND": {
+      "n": 17,
+      "hit_rate": 0.118
+    },
+    "UPTREND": {
+      "n": 8,
+      "hit_rate": 0.75
+    },
+    "RANGE": {
+      "n": 11,
+      "hit_rate": 0.455
+    }
+  },
+  "observations": [
+    "DOWNTREND setup'lari duzensiz basarisiz (n=17, hit=12%)",
+    "ema_trend_v1 DEMOTE sinirinda (n=28, hit=0.179)"
+  ],
+  "suggested_research_questions": [
+    "Dususte LONG setup'lari neden sistematik gecersiz kaliyor — kisa-yon kurallari icin bagimsiz arastirma ac",
+    "ema_trend_v1 hangi rejimde tamamen cope atilmali, hangi rejimde agirligi dusurulmeli — rejim-kosullu arastirma ac"
+  ],
+  "brain_db": {
+    "available": true,
+    "rankings": 27,
+    "distinct_strategies": 1,
+    "by_action": {
+      "DEPRIORITIZE": 27
+    }
+  },
+  "research_only": true
+}

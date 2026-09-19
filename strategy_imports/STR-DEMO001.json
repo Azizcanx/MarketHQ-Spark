@@ -1,0 +1,39 @@
+﻿{
+  "schemaVersion": "MARKETHQ_STRATEGY_V1",
+  "strategyId": "STR-DEMO001",
+  "name": "Example Imported Trend Strategy",
+  "ruleDefinition": {
+    "entry": [
+      "SMA(20) > SMA(100)",
+      "RSI(14) > 50"
+    ],
+    "exit": [
+      "SMA(20) < SMA(100)"
+    ]
+  },
+  "parameters": {
+    "sma_fast": 20,
+    "sma_slow": 100,
+    "rsi_period": 14,
+    "rsi_entry": 50
+  },
+  "signalConfig": {
+    "entry_mode": "LONG_ONLY",
+    "confirmation": "AND"
+  },
+  "riskConfig": {
+    "stop_atr_multiple": 1.5,
+    "target_atr_multiple": 3.0
+  },
+  "supportedMarkets": ["BIST"],
+  "supportedTimeframes": ["1d"],
+  "source": {
+    "type": "external_strategy",
+    "name": "demo"
+  },
+  "provenance": {
+    "importVersion": "1.1",
+    "verified": false,
+    "notes": "Example only; not a verified strategy."
+  }
+}

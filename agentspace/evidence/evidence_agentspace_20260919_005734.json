@@ -1,0 +1,30 @@
+{
+  "run_id": "agentspace_20260919_005734",
+  "task": "Merhaba nasilsin",
+  "exit_code": 0,
+  "stdout": [
+    "Warning: Unknown toolsets: mcp-codegraph",
+    "Query: Merhaba nasilsin",
+    "Initializing agent...",
+    "↻ Resumed session 20260919_002530_a5d287 \"agentspace\" (1 user message, 2 total ",
+    "messages)",
+    "────────────────────────────────────────",
+    "",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "İyilik, teşekkürler. Sen nasılsın?",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260919_002530_a5d287",
+    "  hermes -c \"agentspace\"",
+    "",
+    "Session:        20260919_002530_a5d287",
+    "Title:          agentspace",
+    "Duration:       7s",
+    "Messages:       4 (2 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-19T00:57:34.177138"
+}

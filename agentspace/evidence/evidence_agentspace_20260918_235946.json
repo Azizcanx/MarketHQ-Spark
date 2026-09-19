@@ -1,0 +1,11 @@
+{
+  "run_id": "agentspace_20260918_235946",
+  "task": "Merhaba dünya direct",
+  "exit_code": 126,
+  "stdout": [],
+  "stderr": [
+    "sh: 1: /home/markethq/.hermes/hermes-agent/venv/bin/python: Permission denied",
+    ""
+  ],
+  "timestamp": "2026-09-18T23:59:46.967422"
+}

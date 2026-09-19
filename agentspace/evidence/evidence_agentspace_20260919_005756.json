@@ -1,0 +1,30 @@
+{
+  "run_id": "agentspace_20260919_005756",
+  "task": "Test stream",
+  "exit_code": 0,
+  "stdout": [
+    "Warning: Unknown toolsets: mcp-codegraph",
+    "Query: Test stream",
+    "Initializing agent...",
+    "↻ Resumed session 20260919_002530_a5d287 \"agentspace\" (2 user messages, 4 total ",
+    "messages)",
+    "────────────────────────────────────────",
+    "",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "Test akışı çalışıyor. Bir şeyler mi gönderiyorum?",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260919_002530_a5d287",
+    "  hermes -c \"agentspace\"",
+    "",
+    "Session:        20260919_002530_a5d287",
+    "Title:          agentspace",
+    "Duration:       7s",
+    "Messages:       6 (3 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-19T00:57:56.597559"
+}

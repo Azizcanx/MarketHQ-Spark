@@ -1,0 +1,2369 @@
+{
+  "version": 1,
+  "created_at": "2026-09-04T01:19:21.304147+00:00",
+  "updated_at": "2026-09-04T16:59:23.746626+00:00",
+  "strategies": [
+    {
+      "strategy_id": "STR-D5CCB90530",
+      "name": "THYAO Trend Research Candidate",
+      "description": "SMA/EMA trend ve RSI filtrelerini kullanan araştırma stratejisi.",
+      "status": "TESTING",
+      "source": {
+        "type": "market_hq",
+        "name": "MarketHQ Walk-Forward",
+        "url": "",
+        "author": ""
+      },
+      "market": "BIST",
+      "symbols": [
+        "THYAO.IS"
+      ],
+      "tags": [
+        "trend",
+        "SMA",
+        "EMA",
+        "RSI",
+        "ATR",
+        "BIST"
+      ],
+      "hypothesis": "Orta ve uzun vadeli hareketli ortalama trendi ile RSI filtresinin birlikte kullanılması, belirli piyasa koşullarında daha istikrarlı sinyaller üretebilir.",
+      "parameters": {
+        "sma_fast": 10,
+        "sma_slow": 100,
+        "ema_fast": 20,
+        "ema_slow": 50,
+        "rsi_period": 14,
+        "rsi_oversold": 30,
+        "rsi_overbought": 65,
+        "stop_atr_multiplier": 1.5,
+        "target_atr_multiplier": 3.0
+      },
+      "rules": {
+        "entry": [
+          "Trend göstergeleri ve RSI birlikte değerlendirilir."
+        ],
+        "exit": [],
+        "risk": [
+          "ATR tabanlı stop ve hedef kullanılır."
+        ],
+        "filters": []
+      },
+      "tests": {
+        "backtests": [],
+        "walk_forward": []
+      },
+      "learning": {
+        "confidence": 0.0,
+        "successful_tests": 0,
+        "failed_tests": 0,
+        "validation_passes": 0,
+        "validation_failures": 0,
+        "observations": [
+          {
+            "timestamp": "2026-09-04T01:19:21.336798+00:00",
+            "type": "walk_forward",
+            "text": "WFO V2 sonucunda SMA 10/100, EMA 20/50, RSI 14/30/65 ve target ATR 3.0 kombinasyonları fold'ların önemli bölümünde tekrarlandı."
+          }
+        ]
+      },
+      "notes": "İlk araştırma adayı. Walk-forward sonucu henüz olumlu olarak doğrulanmış değildir.",
+      "created_at": "2026-09-04T01:19:21.305143+00:00",
+      "updated_at": "2026-09-04T01:19:21.342845+00:00"
+    },
+    {
+      "strategy_id": "STR-324E47F7DB",
+      "name": "THYAO.IS Walk-Forward Research Strategy",
+      "description": "MarketHQ WFO V3 tarafından train ve validation dönemlerinde test edilen teknik strateji adayı.",
+      "status": "REJECTED",
+      "source": {
+        "type": "walk_forward",
+        "name": "MarketHQ WFO V3",
+        "url": "",
+        "author": ""
+      },
+      "market": "BIST",
+      "symbols": [
+        "THYAO.IS"
+      ],
+      "tags": [
+        "walk-forward",
+        "validation",
+        "research",
+        "SMA",
+        "EMA",
+        "RSI",
+        "ATR"
+      ],
+      "hypothesis": "Train döneminde seçilen teknik gösterge parametrelerinin gelecekteki validation dönemlerinde istikrarlı sonuç üretip üretmediğini ölçmek.",
+      "parameters": {
+        "sma_fast": 15,
+        "sma_slow": 30,
+        "ema_fast": 15,
+        "ema_slow": 30,
+        "rsi_period": 14,
+        "rsi_oversold": 25,
+        "rsi_overbought": 65,
+        "stop_atr_multiplier": 1.5,
+        "target_atr_multiplier": 3.0
+      },
+      "rules": {
+        "entry": [],
+        "exit": [],
+        "risk": [],
+        "filters": []
+      },
+      "tests": {
+        "backtests": [],
+        "walk_forward": [
+          {
+            "timestamp": "2026-09-04T01:26:08.557221+00:00",
+            "symbol": "THYAO.IS",
+            "fold_count": 7,
+            "positive_folds": 1,
+            "negative_folds": 4,
+            "inconclusive_folds": 2,
+            "validation_trades": 22,
+            "validation_win_rate": 40.91,
+            "validation_return": -1.0693,
+            "validation_net_pnl": -1069.28,
+            "best_fold_return": 0.9655,
+            "worst_fold_return": -1.299,
+            "average_fold_return": -0.1528,
+            "average_fold_dd": 0.6698,
+            "parameter_stability": {
+              "sma_fast": {
+                "most_common": "10",
+                "frequency": 4,
+                "total_folds": 7,
+                "stability_percent": 57.14
+              },
+              "sma_slow": {
+                "most_common": "100",
+                "frequency": 4,
+                "total_folds": 7,
+                "stability_percent": 57.14
+              },
+              "ema_fast": {
+                "most_common": "20",
+                "frequency": 4,
+                "total_folds": 7,
+                "stability_percent": 57.14
+              },
+              "ema_slow": {
+                "most_common": "50",
+                "frequency": 5,
+                "total_folds": 7,
+                "stability_percent": 71.43
+              },
+              "rsi_period": {
+                "most_common": "14",
+                "frequency": 7,
+                "total_folds": 7,
+                "stability_percent": 100.0
+              },
+              "rsi_oversold": {
+                "most_common": "25",
+                "frequency": 4,
+                "total_folds": 7,
+                "stability_percent": 57.14
+              },
+              "rsi_overbought": {
+                "most_common": "65",
+                "frequency": 5,
+                "total_folds": 7,
+                "stability_percent": 71.43
+              },
+              "stop_atr_multiplier": {
+                "most_common": "2.0",
+                "frequency": 4,
+                "total_folds": 7,
+                "stability_percent": 57.14
+              },
+              "target_atr_multiplier": {
+                "most_common": "3.0",
+                "frequency": 7,
+                "total_folds": 7,
+                "stability_percent": 100.0
+              }
+            },
+            "folds": [
+              {
+                "fold": 1,
+                "train_start": "2023-09-04 00:00:00+03:00",
+                "train_end": "2024-09-05 00:00:00+03:00",
+                "validation_start": "2024-09-06 00:00:00+03:00",
+                "validation_end": "2024-12-04 00:00:00+03:00",
+                "train_trades": 17,
+                "train_win_rate": 41.17647058823529,
+                "train_profit_factor": 1.0852510081357234,
+                "train_return": 0.43775837671848894,
+                "train_drawdown": 2.2698250585774016,
+                "train_net_pnl": 437.75837671853145,
+                "validation_trades": 3,
+                "validation_wins": 0,
+                "validation_losses": 3,
+                "validation_win_rate": 0.0,
+                "validation_profit_factor": 0.0,
+                "validation_return": -1.2989546244279282,
+                "validation_net_pnl": -1298.9546244279306,
+                "validation_drawdown": 1.2989546244279282,
+                "return_difference": -1.7367130011464171,
+                "verdict": "NEGATIVE",
+                "train_best_parameters": {
+                  "sma_fast": 15,
+                  "sma_slow": 100,
+                  "ema_fast": 10,
+                  "ema_slow": 100,
+                  "rsi_period": 14,
+                  "rsi_oversold": 35,
+                  "rsi_overbought": 75,
+                  "stop_atr_multiplier": 2.0,
+                  "target_atr_multiplier": 3.0
+                }
+              },
+              {
+                "fold": 2,
+                "train_start": "2023-11-30 00:00:00+03:00",
+                "train_end": "2024-12-04 00:00:00+03:00",
+                "validation_start": "2024-12-05 00:00:00+03:00",
+                "validation_end": "2025-03-04 00:00:00+03:00",
+                "train_trades": 19,
+                "train_win_rate": 31.57894736842105,
+                "train_profit_factor": 0.9317422977632465,
+                "train_return": -0.3336228078877457,
+                "train_drawdown": 2.662520019304093,
+                "train_net_pnl": -333.6228078877386,
+                "validation_trades": 2,
+                "validation_wins": 1,
+                "validation_losses": 1,
+                "validation_win_rate": 50.0,
+                "validation_profit_factor": 1.5058125272410052,
+                "validation_return": 0.18308671211737515,
+                "validation_net_pnl": 183.08671211736612,
+                "validation_drawdown": 0.36000334852535065,
+                "return_difference": 0.5167095200051208,
+                "verdict": "INCONCLUSIVE",
+                "train_best_parameters": {
+                  "sma_fast": 10,
+                  "sma_slow": 100,
+                  "ema_fast": 20,
+                  "ema_slow": 50,
+                  "rsi_period": 14,
+                  "rsi_oversold": 25,
+                  "rsi_overbought": 75,
+                  "stop_atr_multiplier": 1.5,
+                  "target_atr_multiplier": 3.0
+                }
+              },
+              {
+                "fold": 3,
+                "train_start": "2024-02-28 00:00:00+03:00",
+                "train_end": "2025-03-04 00:00:00+03:00",
+                "validation_start": "2025-03-05 00:00:00+03:00",
+                "validation_end": "2025-06-10 00:00:00+03:00",
+                "train_trades": 13,
+                "train_win_rate": 38.46153846153847,
+                "train_profit_factor": 0.7607777874808767,
+                "train_return": -0.7857503334984028,
+                "train_drawdown": 1.5284555788526832,
+                "train_net_pnl": -785.7503334984018,
+                "validation_trades": 3,
+                "validation_wins": 1,
+                "validation_losses": 2,
+                "validation_win_rate": 33.33333333333333,
+                "validation_profit_factor": 0.7112175296045942,
+                "validation_return": -0.31530792545865216,
+                "validation_net_pnl": -315.3079254586665,
+                "validation_drawdown": 0.587992864829423,
+                "return_difference": 0.4704424080397507,
+                "verdict": "NEGATIVE",
+                "train_best_parameters": {
+                  "sma_fast": 10,
+                  "sma_slow": 100,
+                  "ema_fast": 20,
+                  "ema_slow": 50,
+                  "rsi_period": 14,
+                  "rsi_oversold": 25,
+                  "rsi_overbought": 65,
+                  "stop_atr_multiplier": 2.0,
+                  "target_atr_multiplier": 3.0
+                }
+              },
+              {
+                "fold": 4,
+                "train_start": "2024-06-04 00:00:00+03:00",
+                "train_end": "2025-06-10 00:00:00+03:00",
+                "validation_start": "2025-06-11 00:00:00+03:00",
+                "validation_end": "2025-09-08 00:00:00+03:00",
+                "train_trades": 15,
+                "train_win_rate": 40.0,
+                "train_profit_factor": 0.8125848197736062,
+                "train_return": -0.755654589246868,
+                "train_drawdown": 1.5291473403235778,
+                "train_net_pnl": -755.6545892468519,
+                "validation_trades": 3,
+                "validation_wins": 1,
+                "validation_losses": 2,
+                "validation_win_rate": 33.33333333333333,
+                "validation_profit_factor": 0.6663310961033372,
+                "validation_return": -0.30106614123152076,
+                "validation_net_pnl": -301.06614123153236,
+                "validation_drawdown": 0.46713523530520495,
+                "return_difference": 0.45458844801534726,
+                "verdict": "NEGATIVE",
+                "train_best_parameters": {
+                  "sma_fast": 10,
+                  "sma_slow": 100,
+                  "ema_fast": 20,
+                  "ema_slow": 50,
+                  "rsi_period": 14,
+                  "rsi_oversold": 35,
+                  "rsi_overbought": 65,
+                  "stop_atr_multiplier": 2.0,
+                  "target_atr_multiplier": 3.0
+                }
+              },
+              {
+                "fold": 5,
+                "train_start": "2024-09-06 00:00:00+03:00",
+                "train_end": "2025-09-08 00:00:00+03:00",
+                "validation_start": "2025-09-09 00:00:00+03:00",
+                "validation_end": "2025-12-05 00:00:00+03:00",
+                "train_trades": 20,
+                "train_win_rate": 40.0,
+                "train_profit_factor": 1.0459649478420765,
+                "train_return": 0.2205322648897612,
+                "train_drawdown": 1.649931081937639,
+                "train_net_pnl": 220.5322648898054,
+                "validation_trades": 2,
+                "validation_wins": 2,
+                "validation_losses": 0,
+                "validation_win_rate": 100.0,
+                "validation_profit_factor": 0.0,
+                "validation_return": 0.9655207790581821,
+                "validation_net_pnl": 965.5207790581942,
+                "validation_drawdown": 0.0,
+                "return_difference": 0.7449885141684209,
+                "verdict": "INCONCLUSIVE",
+                "train_best_parameters": {
+                  "sma_fast": 20,
+                  "sma_slow": 50,
+                  "ema_fast": 20,
+                  "ema_slow": 50,
+                  "rsi_period": 14,
+                  "rsi_oversold": 25,
+                  "rsi_overbought": 65,
+                  "stop_atr_multiplier": 1.5,
+                  "target_atr_multiplier": 3.0
+                }
+              },
+              {
+                "fold": 6,
+                "train_start": "2024-12-05 00:00:00+03:00",
+                "train_end": "2025-12-05 00:00:00+03:00",
+                "validation_start": "2025-12-08 00:00:00+03:00",
+                "validation_end": "2026-03-05 00:00:00+03:00",
+                "train_trades": 14,
+                "train_win_rate": 57.14285714285714,
+                "train_profit_factor": 1.8230243797628687,
+                "train_return": 2.388629971222711,
+                "train_drawdown": 1.330147602977827,
+                "train_net_pnl": 2388.6299712227137,
+                "validation_trades": 5,
+                "validation_wins": 3,
+                "validation_losses": 2,
+                "validation_win_rate": 60.0,
+                "validation_profit_factor": 1.26410887056337,
+                "validation_return": 0.2965617702221479,
+                "validation_net_pnl": 296.5617702221509,
+                "validation_drawdown": 1.108636024170051,
+                "return_difference": -2.092068201000563,
+                "verdict": "POSITIVE",
+                "train_best_parameters": {
+                  "sma_fast": 10,
+                  "sma_slow": 30,
+                  "ema_fast": 15,
+                  "ema_slow": 50,
+                  "rsi_period": 14,
+                  "rsi_oversold": 35,
+                  "rsi_overbought": 65,
+                  "stop_atr_multiplier": 2.0,
+                  "target_atr_multiplier": 3.0
+                }
+              },
+              {
+                "fold": 7,
+                "train_start": "2025-03-05 00:00:00+03:00",
+                "train_end": "2026-03-05 00:00:00+03:00",
+                "validation_start": "2026-03-06 00:00:00+03:00",
+                "validation_end": "2026-06-08 00:00:00+03:00",
+                "train_trades": 23,
+                "train_win_rate": 47.82608695652174,
+                "train_profit_factor": 1.6753346806572695,
+                "train_return": 3.1096772658996352,
+                "train_drawdown": 1.0707499258412745,
+                "train_net_pnl": 3109.67726589965,
+                "validation_trades": 4,
+                "validation_wins": 1,
+                "validation_losses": 3,
+                "validation_win_rate": 25.0,
+                "validation_profit_factor": 0.5531491098619394,
+                "validation_return": -0.5991157895320676,
+                "validation_net_pnl": -599.11578953207,
+                "validation_drawdown": 0.8655635483981294,
+                "return_difference": -3.708793055431703,
+                "verdict": "NEGATIVE",
+                "train_best_parameters": {
+                  "sma_fast": 15,
+                  "sma_slow": 30,
+                  "ema_fast": 15,
+                  "ema_slow": 30,
+                  "rsi_period": 14,
+                  "rsi_oversold": 25,
+                  "rsi_overbought": 65,
+                  "stop_atr_multiplier": 1.5,
+                  "target_atr_multiplier": 3.0
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "learning": {
+        "confidence": 0.0,
+        "successful_tests": 0,
+        "failed_tests": 0,
+        "validation_passes": 0,
+        "validation_failures": 0,
+        "observations": [
+          {
+            "timestamp": "2026-09-04T01:26:08.566001+00:00",
+            "type": "parameter_stability",
+            "text": "ema_slow parametresi fold'ların %71.4 oranında aynı değeri aldı. En sık değer: 50."
+          },
+          {
+            "timestamp": "2026-09-04T01:26:08.614240+00:00",
+            "type": "parameter_stability",
+            "text": "rsi_period parametresi fold'ların %100.0 oranında aynı değeri aldı. En sık değer: 14."
+          },
+          {
+            "timestamp": "2026-09-04T01:26:08.622807+00:00",
+            "type": "parameter_stability",
+            "text": "rsi_overbought parametresi fold'ların %71.4 oranında aynı değeri aldı. En sık değer: 65."
+          },
+          {
+            "timestamp": "2026-09-04T01:26:08.631464+00:00",
+            "type": "parameter_stability",
+            "text": "target_atr_multiplier parametresi fold'ların %100.0 oranında aynı değeri aldı. En sık değer: 3.0."
+          },
+          {
+            "timestamp": "2026-09-04T01:26:08.639242+00:00",
+            "type": "walk_forward",
+            "text": "WFO sonucu: 1 pozitif, 4 negatif, 2 belirsiz fold. Validation işlem sayısı: 22. Validation win rate: %40.91. Validation return toplamı: -1.07%."
+          },
+          {
+            "timestamp": "2026-09-04T01:26:08.678503+00:00",
+            "type": "overfitting_warning",
+            "text": "Fold 1: train → validation return değişimi -1.74 puan. Performans bozulması gözlendi."
+          },
+          {
+            "timestamp": "2026-09-04T01:26:08.687080+00:00",
+            "type": "overfitting_warning",
+            "text": "Fold 6: train → validation return değişimi -2.09 puan. Performans bozulması gözlendi."
+          },
+          {
+            "timestamp": "2026-09-04T01:26:08.695505+00:00",
+            "type": "overfitting_warning",
+            "text": "Fold 7: train → validation return değişimi -3.71 puan. Performans bozulması gözlendi."
+          }
+        ]
+      },
+      "notes": "Araştırma/backtest kaydıdır. Gerçek emir veya broker işlemi içermez.",
+      "created_at": "2026-09-04T01:26:08.541228+00:00",
+      "updated_at": "2026-09-04T01:26:08.705202+00:00"
+    },
+    {
+      "strategy_id": "STR-0E9BB2C2E8",
+      "name": "SMA-EMA-RSI Trend Takip Stratejisi",
+      "description": "SMA 10 ve SMA 100 ile trend yönünü belirleyen, EMA 20/30 filtresi ve RSI 14 momentum teyidi kullanan trend takip stratejisi.",
+      "status": "TESTING",
+      "source": {
+        "type": "manual",
+        "name": "MarketHQ Strategy Extractor Demo",
+        "url": "",
+        "author": ""
+      },
+      "market": "BIST",
+      "symbols": [
+        "THYAO.IS"
+      ],
+      "tags": [
+        "trend",
+        "sma",
+        "ema",
+        "rsi",
+        "atr",
+        "long"
+      ],
+      "hypothesis": "SMA 10'un SMA 100'ün üzerine çıkması, EMA 20'nin EMA 30'un üzerinde olması ve RSI 14'ün 30 seviyesinin altından toparlanarak 50'nin üzerine çıkmasının long işlemlerde trend ve momentum teyidi sağlayabileceği test edilmelidir.",
+      "parameters": {
+        "sma_fast": 10,
+        "sma_slow": 100,
+        "ema_filter_fast": 20,
+        "ema_filter_slow": 30,
+        "rsi_period": 14,
+        "rsi_recovery_from_level": 30,
+        "rsi_confirmation_level": 50,
+        "atr_stop_multiple": 1.5,
+        "atr_target_multiple": 3
+      },
+      "rules": {
+        "entry": [
+          "SMA 10, SMA 100'ün üzerine çıktığında long giriş düşünülür.",
+          "EMA 20, EMA 30'un üzerinde olduğunda long taraf tercih edilir.",
+          "RSI 14, 30 seviyesinin altından toparlanıp 50 seviyesinin üzerine çıktığında momentum teyidi olarak değerlendirilir."
+        ],
+        "exit": [
+          "Giriş fiyatından 1.5 ATR uzaklıkta stop kullanılır.",
+          "Giriş fiyatından 3 ATR uzaklıkta hedef kullanılır."
+        ],
+        "risk": [
+          "Stop mesafesi giriş fiyatından 1.5 ATR olarak belirtilmiştir.",
+          "Hedef mesafesi giriş fiyatından 3 ATR olarak belirtilmiştir."
+        ],
+        "filters": [
+          "EMA 20'nin EMA 30'un üzerinde olması long taraf için ek trend filtresi olarak kullanılır.",
+          "RSI 14'ün 30 seviyesinin altından toparlanarak 50'nin üzerine çıkması momentum teyidi olarak değerlendirilir."
+        ]
+      },
+      "tests": {
+        "backtests": [],
+        "walk_forward": []
+      },
+      "learning": {
+        "confidence": 0.0,
+        "successful_tests": 0,
+        "failed_tests": 0,
+        "validation_passes": 0,
+        "validation_failures": 0,
+        "observations": [
+          {
+            "timestamp": "2026-09-04T01:31:40.801264+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor belirsizliği: SMA, EMA ve RSI koşullarının aynı anda zorunlu giriş koşulları mı yoksa ayrı teyitler mi olduğu açıkça belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:31:40.809131+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor belirsizliği: ATR hesaplamasında kullanılacak periyot kaynakta belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:31:40.816145+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor belirsizliği: Giriş sinyalinin bar kapanışında mı yoksa intrabar gerçekleştiğinde mi değerlendirileceği belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:31:40.823761+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor belirsizliği: Short giriş koşulları belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:31:40.831970+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor belirsizliği: Pozisyon büyüklüğü ve toplam portföy riski belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:31:40.839242+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor belirsizliği: Backtest sonucu, win rate, getiri, profit factor veya drawdown bilgisi bulunmamaktadır."
+          },
+          {
+            "timestamp": "2026-09-04T01:31:40.846138+00:00",
+            "type": "extraction",
+            "text": "Strateji kaynak metninden Strategy Extractor Agent tarafından çıkarıldı. Kaynak iddiaları henüz MarketHQ tarafından backtest veya walk-forward ile doğrulanmamıştır."
+          }
+        ]
+      },
+      "notes": "Kaynak, stratejinin henüz backtest edilmediğini belirtmektedir. Kaynakta yalnızca long yönlü koşullar açıklanmıştır.",
+      "created_at": "2026-09-04T01:31:40.718576+00:00",
+      "updated_at": "2026-09-04T01:31:40.853723+00:00"
+    },
+    {
+      "strategy_id": "STR-30AA70EC1A",
+      "name": "SMA 10/100 Trend Takip Stratejisi",
+      "description": "SMA 10 ve SMA 100 kesişimini ana long giriş koşulu olarak kullanan; EMA 20/30 trend filtresi, RSI 14 momentum teyidi ve ATR tabanlı stop/hedef içeren trend takip stratejisi.",
+      "status": "TESTING",
+      "source": {
+        "type": "manual",
+        "name": "MarketHQ Strategy Extractor V2 Demo",
+        "url": "",
+        "author": ""
+      },
+      "market": "BIST",
+      "symbols": [
+        "THYAO.IS"
+      ],
+      "tags": [
+        "trend-following",
+        "long-only",
+        "SMA",
+        "EMA",
+        "RSI",
+        "ATR"
+      ],
+      "hypothesis": "SMA 10'un SMA 100 üzerine çıkması, EMA 20'nin EMA 30 üzerinde olması ve RSI 14'ün 30 seviyesinin altından toparlanarak 50 üzerine çıkmasının birlikte long trend hareketlerini belirlemede etkili olup olmadığı test edilmelidir.",
+      "parameters": {
+        "sma_fast": 10,
+        "sma_slow": 100,
+        "ema_fast": 20,
+        "ema_slow": 30,
+        "rsi_period": 14,
+        "rsi_recovery_level": 30,
+        "rsi_confirmation_level": 50,
+        "stop_atr_multiple": 1.5,
+        "target_atr_multiple": 3
+      },
+      "rules": {
+        "entry": [
+          "SMA 10, SMA 100'ün üzerine çıktığında long giriş düşünülür."
+        ],
+        "exit": [
+          "Giriş fiyatından 1.5 ATR uzaklıkta stop kullanılır.",
+          "Giriş fiyatından 3 ATR uzaklıkta hedef kullanılır."
+        ],
+        "risk": [
+          "Stop mesafesi giriş fiyatından 1.5 ATR olarak belirlenir.",
+          "Hedef mesafesi giriş fiyatından 3 ATR olarak belirlenir."
+        ],
+        "filters": [
+          "EMA 20'nin EMA 30'un üzerinde olması long taraf için trend filtresidir."
+        ]
+      },
+      "tests": {
+        "backtests": [
+          {
+            "timestamp": "2026-09-04T01:42:15.127664+00:00",
+            "symbol": "THYAO.IS",
+            "total_trades": 18,
+            "winning_trades": 8,
+            "losing_trades": 10,
+            "win_rate_percent": 44.44444444444444,
+            "profit_factor": 1.240990111677159,
+            "net_pnl": 1039.7625992583514,
+            "return_percent": 1.0397625992583537,
+            "max_drawdown_percent": 2.0078072680644765,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          }
+        ],
+        "walk_forward": []
+      },
+      "learning": {
+        "confidence": 0.0,
+        "successful_tests": 0,
+        "failed_tests": 0,
+        "validation_passes": 0,
+        "validation_failures": 0,
+        "observations": [
+          {
+            "timestamp": "2026-09-04T01:34:00.268198+00:00",
+            "type": "condition_structure",
+            "text": "Strategy Extractor V2 koşul sınıflandırması: {\"logic\": \"UNKNOWN\", \"required\": [\"SMA 10'un SMA 100'ün üzerine çıkması ana long giriş koşuludur.\", \"EMA 20'nin EMA 30'un üzerinde olması ek trend filtresi olarak kullanılmalıdır.\"], \"confirmation\": [\"RSI 14'ün 30 seviyesinin altından toparlanarak 50 seviyesinin üzerine çıkması long giriş için momentum teyidi olarak değerlendirilir.\"], \"optional\": []}"
+          },
+          {
+            "timestamp": "2026-09-04T01:34:00.276122+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor V2 belirsizliği: SMA kesişimi, EMA filtresi ve RSI teyidinin aynı anda zorunlu olup olmadığı açıkça belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:34:00.284292+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor V2 belirsizliği: Koşullar arasındaki genel mantıksal bağın AND veya başka bir yapı olup olmadığı belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:34:00.292056+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor V2 belirsizliği: ATR periyodu belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:34:00.299921+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor V2 belirsizliği: Kullanılan zaman dilimi belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:34:00.307704+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor V2 belirsizliği: SMA kesişiminin bar kapanışında teyit edilip edilmediği belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:34:00.315155+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor V2 belirsizliği: Short giriş koşulları belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:34:00.324741+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor V2 belirsizliği: Pozisyon büyüklüğü ve işlem başına risk yüzdesi belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:34:00.333159+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor V2 belirsizliği: Komisyon, slippage ve emir gerçekleştirme koşulları belirtilmemiştir."
+          },
+          {
+            "timestamp": "2026-09-04T01:34:00.340943+00:00",
+            "type": "uncertainty",
+            "text": "Strategy Extractor V2 belirsizliği: Stop ve hedef seviyelerinin long pozisyon için hangi yönde uygulanacağı kaynakta ayrıntılı olarak açıklanmamıştır."
+          },
+          {
+            "timestamp": "2026-09-04T01:34:00.350272+00:00",
+            "type": "extraction",
+            "text": "Strateji kaynak metninden Strategy Extractor V2 tarafından çıkarıldı. Kaynak iddiaları henüz MarketHQ tarafından backtest veya walk-forward ile doğrulanmamıştır."
+          }
+        ]
+      },
+      "notes": "Kaynak stratejiyi trend takip mantığıyla ve long yönlü olarak açıklamaktadır. Stratejinin henüz backtest edilmediği belirtilmiştir.",
+      "created_at": "2026-09-04T01:34:00.198413+00:00",
+      "updated_at": "2026-09-04T01:42:15.127682+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Kesişimi ve RSI Onayı",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi ve RSI göstergesinin 50 seviyesinin üzerinde olması temel alınarak uzun pozisyon adayı oluşturan strateji.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "moving_average_type": "UNKNOWN",
+        "rsi_period": "UNKNOWN",
+        "rsi_threshold": 50,
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN",
+        "position_size": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı kestiğinde uzun pozisyon açılması."
+        },
+        {
+          "type": "exit",
+          "rule": "Kısa vadeli hareketli ortalama tekrar uzun vadeli hareketli ortalamanın altına geldiğinde pozisyon kapatılır."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı zarar durdurma kullanılabilir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması aranır."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi durumunda uzun pozisyon açılır.",
+            "Onay için RSI göstergesinin 50 seviyesinin üzerinde olması aranır.",
+            "Kısa hareketli ortalamanın tekrar uzun hareketli ortalamanın altına gelmesi durumunda pozisyon kapatılır.",
+            "Risk yönetimi için ATR tabanlı zarar durdurma kullanılabilir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Kısa ve uzun hareketli ortalamaların periyotları belirtilmemiştir.",
+            "Hareketli ortalamaların türü belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "ATR periyodu belirtilmemiştir.",
+            "ATR katsayısı belirtilmemiştir.",
+            "Pozisyon büyüklüğü belirtilmemiştir.",
+            "Piyasa, semboller ve zaman dilimi belirtilmemiştir.",
+            "ATR tabanlı zarar durdurmanın zorunlu mu yoksa opsiyonel mi olduğu kaynakta kesinleştirilmemiştir.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "MarketHQ Discovery Demo",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T01:53:36.378364+00:00",
+      "strategy_id": "STR-E963781855",
+      "updated_at": "2026-09-04T01:53:36.379353+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Kesişimi ve RSI Onaylı Trend Başlangıcı",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı olarak değerlendiren, RSI seviyesinin 50 üzerinde olmasını ek onay olarak kullanabilen araştırma amaçlı strateji adayı.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "rsi_confirmation_level": 50,
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN",
+        "position_size": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı kestiğinde giriş sinyali oluşur."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Kullanılacak hareketli ortalama türü belirtilmemiştir.",
+            "Kısa ve uzun vadeli hareketli ortalama periyotları belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "RSI onayının zorunlu mu yoksa isteğe bağlı mı olduğu net değildir.",
+            "Trendin tersine dönüşünün nasıl tanımlanacağı belirtilmemiştir.",
+            "ATR periyodu ve ATR katsayısı belirtilmemiştir.",
+            "Kesin pozisyon büyüklüğü belirtilmemiştir.",
+            "Piyasa, semboller ve zaman dilimi belirtilmemiştir.",
+            "Stratejinin performansı veya kârlılığı hakkında kaynakta doğrulanmış bir sonuç bulunmamaktadır.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T01:55:26.303820+00:00",
+      "strategy_id": "STR-CAADE48A11",
+      "updated_at": "2026-09-04T01:55:26.304885+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Yukarı Kesişim Trend Stratejisi",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı sinyali olarak kullanan araştırma amaçlı strateji adayı.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "rsi_period": "UNKNOWN",
+        "rsi_confirmation_level": 50,
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN",
+        "position_size": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı keserse trend başlangıcı sinyali oluşur."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Kısa ve uzun vadeli hareketli ortalamaların periyotları belirtilmemiştir.",
+            "Hareketli ortalamaların türü belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "RSI onayının zorunlu mu yoksa isteğe bağlı mı olduğu net değildir.",
+            "Trendin tersine dönüşünün nasıl tanımlanacağı belirtilmemiştir.",
+            "ATR periyodu belirtilmemiştir.",
+            "ATR katsayısı belirtilmemiştir.",
+            "Kesin pozisyon büyüklüğü belirtilmemiştir.",
+            "Piyasa, sembol ve timeframe belirtilmemiştir.",
+            "Stratejinin performansı veya kârlılığı hakkında kaynakta sonuç bulunmamaktadır.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T01:57:27.236260+00:00",
+      "strategy_id": "STR-43EF6A1941",
+      "updated_at": "2026-09-04T01:57:27.237665+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Yukarı Kesişim Trend Stratejisi",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı sinyali olarak kullanan, RSI seviyesini ek onay olarak değerlendirebilen trend takip stratejisi.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "moving_average_type": "UNKNOWN",
+        "rsi_period": "UNKNOWN",
+        "rsi_threshold": 50,
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN",
+        "position_size": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı kestiğinde trend başlangıcı sinyali oluşur."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "exit",
+          "rule": "Trend dönüşünün nasıl tanımlanacağı kaynakta belirtilmemiştir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin pozisyon büyüklüğü kaynakta belirtilmemiştir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin ATR katsayısı kaynakta belirtilmemiştir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir.",
+            "Kaynak, kesin pozisyon büyüklüğü veya kesin ATR katsayısı belirtmemektedir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Piyasa ve işlem yapılacak semboller belirtilmemiştir.",
+            "Timeframe belirtilmemiştir.",
+            "Hareketli ortalamaların periyotları belirtilmemiştir.",
+            "Hareketli ortalama türü belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "RSI onayının zorunlu mu yoksa isteğe bağlı mı olduğu kesinleştirilmemiştir.",
+            "Trend dönüşünün ve çıkış sinyalinin kesin tanımı belirtilmemiştir.",
+            "ATR periyodu belirtilmemiştir.",
+            "ATR katsayısı belirtilmemiştir.",
+            "Pozisyon büyüklüğü ve diğer risk parametreleri belirtilmemiştir.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T01:59:27.603292+00:00",
+      "strategy_id": "STR-7A690BE628",
+      "updated_at": "2026-09-04T01:59:27.604392+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Kesişimi Trend Başlangıcı Stratejisi",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı olarak değerlendiren, RSI 50 üzeri koşulunu ek onay olarak kullanabilen ve trendin tersine dönmesi durumunda pozisyonu kapatmayı öngören araştırma amaçlı strateji adayı.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "moving_average_type": "UNKNOWN",
+        "rsi_period": "UNKNOWN",
+        "rsi_confirmation_level": 50,
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN",
+        "position_size": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı keserse trend başlangıcı sinyali olarak değerlendirilebilir."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Kısa ve uzun vadeli hareketli ortalamaların periyotları belirtilmemiştir.",
+            "Hareketli ortalamaların türü belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "Trendin tersine dönüşünün nasıl tanımlandığı belirtilmemiştir.",
+            "ATR periyodu ve ATR katsayısı belirtilmemiştir.",
+            "Kesin pozisyon büyüklüğü belirtilmemiştir.",
+            "Market, semboller ve timeframe belirtilmemiştir.",
+            "RSI 50 üzeri koşulunun zorunlu mu yoksa isteğe bağlı mı olduğu kesinleştirilmemiştir.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T02:02:33.255205+00:00",
+      "strategy_id": "STR-2E2125ACD6",
+      "updated_at": "2026-09-04T02:02:33.256428+00:00"
+    },
+    {
+      "name": "Kısa-Uzun Hareketli Ortalama Kesişimi",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı sinyali olarak kullanan, RSI 50 üzeri koşulunu ek onay olarak değerlendirebilen araştırma amaçlı strateji adayı.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "VALIDATION",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "rsi_threshold": 50,
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "moving_average_types": "UNKNOWN",
+        "atr_period": "UNKNOWN",
+        "atr_coefficient": "UNKNOWN",
+        "position_sizing": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı kestiğinde trend başlangıcı sinyali oluşur."
+        },
+        {
+          "type": "entry",
+          "rule": "Pozisyon yönü ve giriş uygulamasının kaynakta ayrıntılı olarak belirtilmediği not edilmelidir."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin pozisyon büyüklüğü belirtilmemiştir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin ATR katsayısı belirtilmemiştir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir.",
+            "Kaynak, kesin pozisyon büyüklüğü veya kesin ATR katsayısı belirtmemektedir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Piyasa ve sembol belirtilmemiştir.",
+            "Zaman dilimi belirtilmemiştir.",
+            "Hareketli ortalamaların periyotları belirtilmemiştir.",
+            "Hareketli ortalama türleri belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "Trendin tersine dönüşünün nasıl tanımlandığı belirtilmemiştir.",
+            "ATR periyodu belirtilmemiştir.",
+            "ATR katsayısı belirtilmemiştir.",
+            "Kesin pozisyon büyüklüğü ve risk yüzdesi belirtilmemiştir.",
+            "RSI onayının zorunlu mu yoksa isteğe bağlı mı olduğu netleştirilmemiştir.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T02:07:07.451987+00:00",
+      "strategy_id": "STR-25D01684B1",
+      "updated_at": "2026-09-04T14:42:38.291520+00:00",
+      "tests": {
+        "backtests": [
+          {
+            "timestamp": "2026-09-04T14:42:37.931077+00:00",
+            "symbol": "THYAO.IS",
+            "total_trades": 17,
+            "winning_trades": 6,
+            "losing_trades": 11,
+            "win_rate_percent": 35.294117647058826,
+            "profit_factor": 0.700709259580317,
+            "net_pnl": -1735.6991849867434,
+            "return_percent": -1.7356991849867498,
+            "max_drawdown_percent": 4.013673542205254,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:37.947710+00:00",
+            "symbol": "ASELS.IS",
+            "total_trades": 18,
+            "winning_trades": 8,
+            "losing_trades": 10,
+            "win_rate_percent": 44.44444444444444,
+            "profit_factor": 1.0202368778727993,
+            "net_pnl": 172.93088681216636,
+            "return_percent": 0.17293088681218372,
+            "max_drawdown_percent": 6.47696238231844,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:37.959030+00:00",
+            "symbol": "GARAN.IS",
+            "total_trades": 15,
+            "winning_trades": 3,
+            "losing_trades": 12,
+            "win_rate_percent": 20.0,
+            "profit_factor": 0.414484359464453,
+            "net_pnl": -3470.5539483848615,
+            "return_percent": -3.47055394838488,
+            "max_drawdown_percent": 3.47055394838488,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:37.970283+00:00",
+            "symbol": "AKBNK.IS",
+            "total_trades": 21,
+            "winning_trades": 7,
+            "losing_trades": 14,
+            "win_rate_percent": 33.33333333333333,
+            "profit_factor": 0.737782160528465,
+            "net_pnl": -2273.154331227859,
+            "return_percent": -2.2731543312278557,
+            "max_drawdown_percent": 5.363058887658168,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:37.979678+00:00",
+            "symbol": "EREGL.IS",
+            "total_trades": 18,
+            "winning_trades": 10,
+            "losing_trades": 8,
+            "win_rate_percent": 55.55555555555556,
+            "profit_factor": 1.3707590482722019,
+            "net_pnl": 1898.7165793227084,
+            "return_percent": 1.898716579322679,
+            "max_drawdown_percent": 1.582992746662082,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:37.989317+00:00",
+            "symbol": "TUPRS.IS",
+            "total_trades": 23,
+            "winning_trades": 11,
+            "losing_trades": 12,
+            "win_rate_percent": 47.82608695652174,
+            "profit_factor": 1.0866090929320238,
+            "net_pnl": 680.5419564665982,
+            "return_percent": 0.6805419564666071,
+            "max_drawdown_percent": 2.419609857703753,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.000061+00:00",
+            "symbol": "SISE.IS",
+            "total_trades": 20,
+            "winning_trades": 8,
+            "losing_trades": 12,
+            "win_rate_percent": 40.0,
+            "profit_factor": 0.9564746003056641,
+            "net_pnl": -289.74773349506944,
+            "return_percent": -0.28974773349508265,
+            "max_drawdown_percent": 2.2924360912301323,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.010371+00:00",
+            "symbol": "BIMAS.IS",
+            "total_trades": 23,
+            "winning_trades": 6,
+            "losing_trades": 17,
+            "win_rate_percent": 26.08695652173913,
+            "profit_factor": 0.4553128807697968,
+            "net_pnl": -4715.9868520323525,
+            "return_percent": -4.715986852032361,
+            "max_drawdown_percent": 5.23365340567582,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.020259+00:00",
+            "symbol": "AAPL",
+            "total_trades": 15,
+            "winning_trades": 6,
+            "losing_trades": 9,
+            "win_rate_percent": 40.0,
+            "profit_factor": 0.8138709532200488,
+            "net_pnl": -766.2842528976178,
+            "return_percent": -0.7662842528976199,
+            "max_drawdown_percent": 2.743314820852638,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.030481+00:00",
+            "symbol": "MSFT",
+            "total_trades": 20,
+            "winning_trades": 9,
+            "losing_trades": 11,
+            "win_rate_percent": 45.0,
+            "profit_factor": 0.9284868654682095,
+            "net_pnl": -442.7106825717653,
+            "return_percent": -0.4427106825717786,
+            "max_drawdown_percent": 2.6390456208325364,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.041485+00:00",
+            "symbol": "NVDA",
+            "total_trades": 19,
+            "winning_trades": 3,
+            "losing_trades": 16,
+            "win_rate_percent": 15.789473684210526,
+            "profit_factor": 0.1961829126775368,
+            "net_pnl": -7362.537085123109,
+            "return_percent": -7.362537085123111,
+            "max_drawdown_percent": 7.553245893714278,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.053117+00:00",
+            "symbol": "AMZN",
+            "total_trades": 15,
+            "winning_trades": 3,
+            "losing_trades": 12,
+            "win_rate_percent": 20.0,
+            "profit_factor": 0.3044501462231303,
+            "net_pnl": -4093.532053487893,
+            "return_percent": -4.093532053487903,
+            "max_drawdown_percent": 4.706197521918865,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.063225+00:00",
+            "symbol": "GOOGL",
+            "total_trades": 17,
+            "winning_trades": 8,
+            "losing_trades": 9,
+            "win_rate_percent": 47.05882352941176,
+            "profit_factor": 1.0393288356054584,
+            "net_pnl": 217.35275127914994,
+            "return_percent": 0.2173527512791429,
+            "max_drawdown_percent": 2.9231686588067407,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.074550+00:00",
+            "symbol": "META",
+            "total_trades": 20,
+            "winning_trades": 6,
+            "losing_trades": 14,
+            "win_rate_percent": 30.0,
+            "profit_factor": 0.6357197756090586,
+            "net_pnl": -2995.1422825797017,
+            "return_percent": -2.995142282579666,
+            "max_drawdown_percent": 3.5490081425181286,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.087269+00:00",
+            "symbol": "TSLA",
+            "total_trades": 15,
+            "winning_trades": 4,
+            "losing_trades": 11,
+            "win_rate_percent": 26.666666666666668,
+            "profit_factor": 0.6558496826818647,
+            "net_pnl": -2545.0406465888486,
+            "return_percent": -2.545040646588892,
+            "max_drawdown_percent": 4.066919298993676,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.098645+00:00",
+            "symbol": "AVGO",
+            "total_trades": 14,
+            "winning_trades": 5,
+            "losing_trades": 9,
+            "win_rate_percent": 35.714285714285715,
+            "profit_factor": 0.6978863875593737,
+            "net_pnl": -2250.697588157301,
+            "return_percent": -2.250697588157302,
+            "max_drawdown_percent": 3.8270456555964394,
+            "raw_summary": {
+              "status": "BACKTEST"
+            }
+          }
+        ],
+        "walk_forward": [
+          {
+            "timestamp": "2026-09-04T14:42:38.109924+00:00",
+            "symbol": "THYAO.IS",
+            "fold_count": 7,
+            "positive_folds": 1,
+            "negative_folds": 3,
+            "inconclusive_folds": 3,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.120076+00:00",
+            "symbol": "ASELS.IS",
+            "fold_count": 7,
+            "positive_folds": 0,
+            "negative_folds": 1,
+            "inconclusive_folds": 6,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.130176+00:00",
+            "symbol": "GARAN.IS",
+            "fold_count": 7,
+            "positive_folds": 0,
+            "negative_folds": 3,
+            "inconclusive_folds": 4,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.140352+00:00",
+            "symbol": "AKBNK.IS",
+            "fold_count": 7,
+            "positive_folds": 2,
+            "negative_folds": 4,
+            "inconclusive_folds": 1,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.150078+00:00",
+            "symbol": "EREGL.IS",
+            "fold_count": 7,
+            "positive_folds": 0,
+            "negative_folds": 2,
+            "inconclusive_folds": 5,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.161019+00:00",
+            "symbol": "TUPRS.IS",
+            "fold_count": 7,
+            "positive_folds": 1,
+            "negative_folds": 2,
+            "inconclusive_folds": 4,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.170784+00:00",
+            "symbol": "SISE.IS",
+            "fold_count": 7,
+            "positive_folds": 1,
+            "negative_folds": 4,
+            "inconclusive_folds": 2,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.182173+00:00",
+            "symbol": "BIMAS.IS",
+            "fold_count": 8,
+            "positive_folds": 0,
+            "negative_folds": 4,
+            "inconclusive_folds": 4,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.192707+00:00",
+            "symbol": "AAPL",
+            "fold_count": 7,
+            "positive_folds": 1,
+            "negative_folds": 4,
+            "inconclusive_folds": 2,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.202518+00:00",
+            "symbol": "MSFT",
+            "fold_count": 7,
+            "positive_folds": 1,
+            "negative_folds": 4,
+            "inconclusive_folds": 2,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.213442+00:00",
+            "symbol": "NVDA",
+            "fold_count": 7,
+            "positive_folds": 0,
+            "negative_folds": 3,
+            "inconclusive_folds": 4,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.224144+00:00",
+            "symbol": "AMZN",
+            "fold_count": 7,
+            "positive_folds": 1,
+            "negative_folds": 3,
+            "inconclusive_folds": 3,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.234368+00:00",
+            "symbol": "GOOGL",
+            "fold_count": 7,
+            "positive_folds": 2,
+            "negative_folds": 2,
+            "inconclusive_folds": 3,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.244742+00:00",
+            "symbol": "META",
+            "fold_count": 7,
+            "positive_folds": 1,
+            "negative_folds": 3,
+            "inconclusive_folds": 3,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.255873+00:00",
+            "symbol": "TSLA",
+            "fold_count": 7,
+            "positive_folds": 3,
+            "negative_folds": 1,
+            "inconclusive_folds": 3,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          },
+          {
+            "timestamp": "2026-09-04T14:42:38.266993+00:00",
+            "symbol": "AVGO",
+            "fold_count": 7,
+            "positive_folds": 0,
+            "negative_folds": 4,
+            "inconclusive_folds": 3,
+            "validation_trades": 0,
+            "validation_win_rate": 0.0,
+            "validation_return": 0.0,
+            "validation_net_pnl": 0.0,
+            "best_fold_return": 0.0,
+            "worst_fold_return": 0.0,
+            "average_fold_return": 0.0,
+            "average_fold_dd": 0.0,
+            "parameter_stability": {},
+            "folds": []
+          }
+        ]
+      },
+      "learning": {
+        "observations": [
+          {
+            "timestamp": "2026-09-04T14:42:38.279714+00:00",
+            "type": "research_pipeline",
+            "text": "Research Pipeline V3: score=15.0; classification=WEAK; WFO status=NEGATIVE; validation=UNAVAILABLE."
+          }
+        ],
+        "confidence": 11.43
+      }
+    },
+    {
+      "name": "Hareketli Ortalama Yukarı Kesişim ve RSI Onayı",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı olarak değerlendiren ve RSI değerinin 50 seviyesinin üzerinde olmasını ek onay olarak kullanabilen araştırma amaçlı strateji adayı.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "kisa_hareketli_ortalama_periyodu": "UNKNOWN",
+        "uzun_hareketli_ortalama_periyodu": "UNKNOWN",
+        "hareketli_ortalama_turleri": "UNKNOWN",
+        "rsi_periyodu": "UNKNOWN",
+        "rsi_onay_seviyesi": 50,
+        "atr_periyodu": "UNKNOWN",
+        "atr_katsayisi": "UNKNOWN",
+        "pozisyon_boyutu": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı keserse trend başlangıcı sinyali oluşur."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin pozisyon büyüklüğü belirtilmemiştir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin ATR katsayısı belirtilmemiştir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir.",
+            "Kaynak, kesin pozisyon büyüklüğü veya kesin ATR katsayısı belirtmemektedir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Kısa ve uzun vadeli hareketli ortalamaların periyotları belirtilmemiştir.",
+            "Hareketli ortalama türleri belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "ATR periyodu belirtilmemiştir.",
+            "ATR katsayısı belirtilmemiştir.",
+            "Pozisyon büyüklüğü yöntemi belirtilmemiştir.",
+            "Trendin tersine dönüşünün nasıl tanımlanacağı belirtilmemiştir.",
+            "Piyasa, sembol ve timeframe belirtilmemiştir.",
+            "RSI onayının zorunlu mu yoksa isteğe bağlı mı olduğu kesinleştirilmemiştir.",
+            "Stratejinin performansına ilişkin backtest veya kârlılık sonucu sunulmamıştır.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T12:36:36.291482+00:00",
+      "strategy_id": "STR-3CC9B76967",
+      "updated_at": "2026-09-04T12:36:36.316651+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Kesişimi ve RSI Onaylı Trend Stratejisi",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı olarak değerlendiren ve RSI'ın 50 seviyesinin üzerinde olmasını ek onay olarak kullanabilen araştırma amaçlı strateji adayı.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "rsi_confirmation_level": 50,
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN",
+        "position_size": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı keser."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin pozisyon büyüklüğü kaynakta belirtilmemiştir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin ATR katsayısı kaynakta belirtilmemiştir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir.",
+            "Kaynak, kesin pozisyon büyüklüğü veya kesin ATR katsayısı belirtmemektedir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Kullanılacak hareketli ortalama türü belirtilmemiştir.",
+            "Kısa ve uzun vadeli hareketli ortalama periyotları belirtilmemiştir.",
+            "Stratejinin hangi market veya sembollerde uygulanacağı belirtilmemiştir.",
+            "Timeframe belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "RSI koşulunun zorunlu mu yoksa isteğe bağlı mı olduğu net değildir.",
+            "Trendin tersine dönüşünün nasıl tanımlanacağı belirtilmemiştir.",
+            "ATR periyodu ve ATR katsayısı belirtilmemiştir.",
+            "Pozisyon büyüklüğü ve diğer risk parametreleri belirtilmemiştir.",
+            "Stratejinin yalnızca uzun yönlü mü yoksa kısa yönlü işlemleri de mi kapsadığı belirtilmemiştir.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T13:24:25.594349+00:00",
+      "strategy_id": "STR-C2351574A8",
+      "updated_at": "2026-09-04T13:24:25.596261+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Yukarı Kesişim ve RSI Onayı",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı olarak kullanan, RSI değerinin 50 seviyesinin üzerinde olmasını ek onay olarak değerlendiren araştırma amaçlı strateji adayı.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "rsi_period": "UNKNOWN",
+        "rsi_confirmation_level": 50,
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN",
+        "position_size": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı kestiğinde trend başlangıcı sinyali oluşur."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Kullanılacak piyasa ve semboller belirtilmemiştir.",
+            "Timeframe belirtilmemiştir.",
+            "Hareketli ortalamaların türü ve periyotları belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "RSI 50 seviyesinin zorunlu mu yoksa isteğe bağlı mı olduğu kesin değildir.",
+            "Trendin tersine dönüşünün nasıl tanımlanacağı belirtilmemiştir.",
+            "ATR periyodu belirtilmemiştir.",
+            "ATR katsayısı belirtilmemiştir.",
+            "Kesin pozisyon büyüklüğü belirtilmemiştir.",
+            "Stratejinin performansı veya kârlılığı hakkında kaynakta sonuç bulunmamaktadır.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T14:18:45.475979+00:00",
+      "strategy_id": "STR-0A16BF34C7",
+      "updated_at": "2026-09-04T14:18:45.481832+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Kesişimi ve RSI Onaylı Trend Stratejisi",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı olarak değerlendiren; RSI göstergesinin 50 seviyesinin üzerinde olmasını ek onay olarak kullanabilen araştırma amaçlı strateji adayı.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "moving_average_type": "UNKNOWN",
+        "rsi_period": "UNKNOWN",
+        "rsi_confirmation_level": 50,
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN",
+        "position_size": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı kestiğinde trend başlangıcı sinyali oluşur."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönüşünün hangi teknik koşulla tanımlanacağı kaynakta belirtilmemiştir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin pozisyon büyüklüğü kaynakta belirtilmemiştir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin ATR katsayısı kaynakta belirtilmemiştir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir.",
+            "Kaynak, kesin pozisyon büyüklüğü veya kesin ATR katsayısı belirtmemektedir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Piyasa ve işlem yapılacak semboller belirtilmemiştir.",
+            "Timeframe belirtilmemiştir.",
+            "Kısa ve uzun vadeli hareketli ortalamaların periyotları belirtilmemiştir.",
+            "Hareketli ortalama türü belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "Trendin tersine dönüşünü tanımlayan kesin çıkış koşulu belirtilmemiştir.",
+            "ATR periyodu belirtilmemiştir.",
+            "ATR katsayısı belirtilmemiştir.",
+            "Pozisyon büyüklüğü ve diğer risk parametreleri belirtilmemiştir.",
+            "RSI onayının zorunlu mu yoksa isteğe bağlı mı olduğu kesinleştirilmemiştir.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T14:53:02.520754+00:00",
+      "strategy_id": "STR-66DB3AFF1A",
+      "updated_at": "2026-09-04T14:53:02.523390+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Yukarı Kesişim Trend Stratejisi",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı olarak değerlendiren, RSI seviyesini ek onay olarak kullanabilen araştırma amaçlı strateji adayı.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "moving_average_method": "UNKNOWN",
+        "rsi_period": "UNKNOWN",
+        "rsi_confirmation_level": 50,
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN",
+        "position_size": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi durumunda trend başlangıcı sinyali oluşur."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Kısa ve uzun vadeli hareketli ortalamaların periyotları belirtilmemiştir.",
+            "Hareketli ortalamaların hesaplama yöntemi belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "RSI onayının zorunlu mu yoksa isteğe bağlı mı olduğu kesin değildir.",
+            "Trendin tersine dönüşünün nasıl tanımlanacağı belirtilmemiştir.",
+            "ATR periyodu belirtilmemiştir.",
+            "ATR katsayısı belirtilmemiştir.",
+            "Kesin pozisyon büyüklüğü belirtilmemiştir.",
+            "Piyasa, semboller ve zaman dilimi belirtilmemiştir.",
+            "ATR tabanlı risk yönetiminin uygulanma şekli belirtilmemiştir.",
+            "Stratejinin performansı veya kârlılığı hakkında kaynakta sonuç bulunmamaktadır.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T15:11:14.699329+00:00",
+      "strategy_id": "STR-4754E7F862",
+      "updated_at": "2026-09-04T15:11:14.701748+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Yukarı Kesişim Trend Stratejisi",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak değerlendirilir. RSI'nin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "rsi_confirmation_level": 50,
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "moving_average_types": "UNKNOWN",
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı keserse trend başlangıcı olarak değerlendirilir."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin pozisyon büyüklüğü belirtilmemiştir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin ATR katsayısı belirtilmemiştir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Piyasa ve işlem sembolleri belirtilmemiştir.",
+            "Zaman dilimi belirtilmemiştir.",
+            "Hareketli ortalamaların periyotları belirtilmemiştir.",
+            "Hareketli ortalamaların türü belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "Trendin tersine dönüşünün nasıl tanımlandığı belirtilmemiştir.",
+            "ATR periyodu belirtilmemiştir.",
+            "ATR katsayısı belirtilmemiştir.",
+            "Kesin pozisyon büyüklüğü belirtilmemiştir.",
+            "RSI onayının zorunlu mu yoksa isteğe bağlı mı olduğu kesinleştirilmemiştir.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T16:28:29.749330+00:00",
+      "strategy_id": "STR-EEB06FA30B",
+      "updated_at": "2026-09-04T16:28:29.750880+00:00"
+    },
+    {
+      "name": "Hareketli Ortalama Yukarı Kesişim ve RSI Onayı",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesini trend başlangıcı sinyali olarak kullanan, RSI'nın 50 seviyesinin üzerinde olmasını ek onay olarak değerlendiren araştırma amaçlı strateji adayı.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "short_moving_average_period": "UNKNOWN",
+        "long_moving_average_period": "UNKNOWN",
+        "moving_average_method": "UNKNOWN",
+        "rsi_period": "UNKNOWN",
+        "rsi_level": 50,
+        "atr_period": "UNKNOWN",
+        "atr_multiplier": "UNKNOWN",
+        "position_size": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı keserse giriş sinyali oluşur."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Piyasa ve işlem sembolleri belirtilmemiştir.",
+            "Zaman dilimi belirtilmemiştir.",
+            "Kısa ve uzun vadeli hareketli ortalama periyotları belirtilmemiştir.",
+            "Hareketli ortalamaların yöntemi belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "ATR periyodu belirtilmemiştir.",
+            "Kesin ATR katsayısı belirtilmemiştir.",
+            "Kesin pozisyon büyüklüğü belirtilmemiştir.",
+            "Trendin tersine dönüşünün nasıl tanımlanacağı belirtilmemiştir.",
+            "RSI onayının zorunlu mu yoksa isteğe bağlı mı olduğu açıkça belirlenmemiştir.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T16:46:44.196085+00:00",
+      "strategy_id": "STR-34BE03DB2E",
+      "updated_at": "2026-09-04T16:46:44.197509+00:00"
+    },
+    {
+      "name": "Kısa ve Uzun Vadeli Hareketli Ortalama Yukarı Kesişim Stratejisi",
+      "description": "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı sinyali olarak değerlendirilir. RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+      "market": "UNKNOWN",
+      "symbols": [],
+      "timeframe": "UNKNOWN",
+      "status": "HYPOTHESIS",
+      "research_only": true,
+      "execution_enabled": false,
+      "parameters": {
+        "rsi_esik": 50,
+        "kisa_hareketli_ortalama_periyodu": "UNKNOWN",
+        "uzun_hareketli_ortalama_periyodu": "UNKNOWN",
+        "rsi_periyodu": "UNKNOWN",
+        "atr_periyodu": "UNKNOWN",
+        "atr_katsayisi": "UNKNOWN"
+      },
+      "rules": [
+        {
+          "type": "entry",
+          "rule": "Kısa vadeli hareketli ortalama, uzun vadeli hareketli ortalamayı yukarı keserse giriş sinyali oluşur."
+        },
+        {
+          "type": "exit",
+          "rule": "Trendin tersine dönmesi durumunda pozisyon kapatılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "ATR tabanlı risk yönetimi kullanılabilir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin pozisyon büyüklüğü belirtilmemiştir."
+        },
+        {
+          "type": "risk",
+          "rule": "Kesin ATR katsayısı belirtilmemiştir."
+        }
+      ],
+      "observations": [
+        {
+          "type": "confirmation",
+          "observation": [
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir."
+          ]
+        },
+        {
+          "type": "source_evidence",
+          "observation": [
+            "Kısa vadeli hareketli ortalamanın uzun vadeli hareketli ortalamayı yukarı kesmesi trend başlangıcı olarak kabul edilir.",
+            "RSI göstergesinin 50 seviyesinin üzerinde olması ek onay olarak kullanılabilir.",
+            "Pozisyon, trendin tersine dönmesi durumunda kapatılabilir.",
+            "ATR tabanlı risk yönetimi kullanılabilir.",
+            "Kaynak, kesin pozisyon büyüklüğü veya kesin ATR katsayısı belirtmemektedir."
+          ]
+        },
+        {
+          "type": "uncertainty",
+          "observation": [
+            "Piyasa, sembol ve işlem yapılan varlık belirtilmemiştir.",
+            "Zaman dilimi belirtilmemiştir.",
+            "Kısa ve uzun vadeli hareketli ortalamaların türü ve periyotları belirtilmemiştir.",
+            "RSI periyodu belirtilmemiştir.",
+            "RSI onayının zorunlu mu yoksa isteğe bağlı mı olduğu kesinleştirilmemiştir; kaynakta ek onay olarak kullanılabileceği ifade edilmiştir.",
+            "Trend dönüşünün nasıl tanımlanacağı belirtilmemiştir.",
+            "ATR periyodu ve ATR katsayısı belirtilmemiştir.",
+            "Pozisyon büyüklüğü ve diğer risk parametreleri belirtilmemiştir.",
+            "Stratejinin performansı veya kârlılığı hakkında kaynakta sonuç bulunmamaktadır.",
+            "Timeframe kaynakta kesin belirtilmemiş."
+          ]
+        }
+      ],
+      "source": {
+        "title": "demo_strategy_source",
+        "type": "research"
+      },
+      "discovered_at": "2026-09-04T16:59:23.744187+00:00",
+      "strategy_id": "STR-43839FA9C6",
+      "updated_at": "2026-09-04T16:59:23.746422+00:00"
+    }
+  ]
+}

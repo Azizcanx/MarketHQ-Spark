@@ -1,0 +1,31 @@
+{
+  "run_id": "agentspace_20260919_140016",
+  "task": "test goal",
+  "exit_code": 0,
+  "stdout": [
+    "Warning: Unknown toolsets: mcp-codegraph",
+    "Query: [Context: Session:        20260919_135553_b6d64c Title:          ",
+    "[Context: Session: 20260919_034715_a20119… Duration:       9s Messages:       2 ",
+    "(1 user, 0 tool calls) ] test goal",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "⚠ Auxiliary title generation failed: HTTP 400: This request is not valid. Check the model name and other parameters. Additional info: Provider returned error",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "Ne, yapıcak bir şey var? Bu mesaj bir session referansı ve \"test goal\" diyorsun — detay ver, hemen baslayalim.",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260919_140006_b2949e",
+    "  hermes -c \"[Context: Session: 20260919_135553_b6d64c…\"",
+    "",
+    "Session:        20260919_140006_b2949e",
+    "Title:          [Context: Session: 20260919_135553_b6d64c…",
+    "Duration:       8s",
+    "Messages:       2 (1 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-19T14:00:16.253124"
+}

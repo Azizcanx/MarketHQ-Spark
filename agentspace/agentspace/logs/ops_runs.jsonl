@@ -1,0 +1,1 @@
+{"job": "daily_backfill", "new_labeled": 0, "per_symbol": {"BTC-USD": {"NO_SETUP": 2, "EXPIRED": 1, "INVALIDATED": 1, "CONFIRMED": 1}, "ETH-USD": {"CONFIRMED": 2, "EXPIRED": 2, "INVALIDATED": 1}, "SOL-USD": {"NO_SETUP": 1, "INVALIDATED": 3, "EXPIRED": 1}}, "decided": 36, "pending": 1, "ranking": ["vwap_v1", "supertrend_v1", "or_breakout_v1", "adx_v1", "smc_structure_v1"]}

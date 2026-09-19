@@ -1,0 +1,25 @@
+{
+  "run_id": "agentspace_20260916_033315",
+  "task": "burdamısın",
+  "exit_code": 0,
+  "stdout": [
+    "Query: burdamısın",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "Annasın, ne yapıyorum?",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260916_033316_b7384c",
+    "",
+    "Session:        20260916_033316_b7384c",
+    "Duration:       8s",
+    "Messages:       2 (1 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-16T03:33:25.949696"
+}

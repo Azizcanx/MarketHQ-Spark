@@ -1,0 +1,49 @@
+name: MarketHQ Python CI
+
+on:
+  push:
+    branches:
+      - main
+      - feature/cursor-operations-layer-v2-quality-final6
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  python-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate dependency manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s requirements.txt
+          grep -q '^numpy>=' requirements.txt
+          grep -q '^pandas>=' requirements.txt
+          grep -q '^yfinance>=' requirements.txt
+          grep -q '^scipy>=' requirements.txt
+          grep -q '^requests>=' requirements.txt
+          grep -q '^python-dotenv>=' requirements.txt
+          grep -q '^openai>=' requirements.txt
+
+      - name: Compile active Python sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m compileall -q agents
+          python -m py_compile dashboard_backend_v2_3.py
+          while IFS= read -r -d '' file; do
+            python -m py_compile "$file"
+          done < <(find . -maxdepth 1 -type f -name '*.py' -print0)

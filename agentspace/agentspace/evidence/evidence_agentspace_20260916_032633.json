@@ -1,0 +1,29 @@
+{
+  "run_id": "agentspace_20260916_032633",
+  "task": "burdamısın --timeout 30",
+  "exit_code": 0,
+  "stdout": [
+    "Query: burdamısın --timeout 30",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "Anlaşılamayan bir komut. --timeout 30 bayrağı ne için? AI modellerinde timeout genellikle saniye cinsinden ayarlanır, 30 saniye kısa bir süre.",
+    "",
+    "Yeni bir görev hakkında bilgi verirse yardımcı olurum.",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260916_032634_e0d60e",
+    "  hermes -c \"burdamısın --timeout 30\"",
+    "",
+    "Session:        20260916_032634_e0d60e",
+    "Title:          burdamısın --timeout 30",
+    "Duration:       10s",
+    "Messages:       2 (1 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-16T03:26:45.797623"
+}

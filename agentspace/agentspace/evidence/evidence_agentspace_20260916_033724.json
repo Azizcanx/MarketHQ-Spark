@@ -1,0 +1,29 @@
+{
+  "run_id": "agentspace_20260916_033724",
+  "task": "--timeout 30 Hello world",
+  "exit_code": 0,
+  "stdout": [
+    "Query: --timeout 30 Hello world",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "  ┊ 💻 preparing terminal…",
+    "  ┊ 💻 $         timeout 30 echo \"Hello world\"  0.4s",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "timeout 30 echo \"Hello world\" → output: \"Hello world\", exit_code: 0",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260916_033726_1fb955",
+    "  hermes -c \"--timeout 30 Hello world\"",
+    "",
+    "Session:        20260916_033726_1fb955",
+    "Title:          --timeout 30 Hello world",
+    "Duration:       19s",
+    "Messages:       4 (1 user, 2 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-16T03:37:47.448003"
+}

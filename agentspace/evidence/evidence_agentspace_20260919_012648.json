@@ -1,0 +1,31 @@
+{
+  "run_id": "agentspace_20260919_012648",
+  "task": "Test stream check",
+  "exit_code": 0,
+  "stdout": [
+    "Warning: Unknown toolsets: mcp-codegraph",
+    "Query: [Context: Session:        20260919_012448_263d5d Title:          ",
+    "[Context: Session: 20260919_011000_4e9dba… Duration:       8s Messages:       2 ",
+    "(1 user, 0 tool calls) ] Test stream check",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "⚠ Auxiliary title generation failed: HTTP 400: This request is not valid. Check the model name and other parameters. Additional info: Provider returned error",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "Stream is live — session 20260919_012448_263d5d active, responding. What do you need?",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260919_012639_5d9a68",
+    "  hermes -c \"[Context: Session: 20260919_012448_263d5d…\"",
+    "",
+    "Session:        20260919_012639_5d9a68",
+    "Title:          [Context: Session: 20260919_012448_263d5d…",
+    "Duration:       9s",
+    "Messages:       2 (1 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-19T01:26:48.992646"
+}

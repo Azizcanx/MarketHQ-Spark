@@ -1,0 +1,25 @@
+{
+  "run_id": "agentspace_20260916_032829",
+  "task": "burdamısın --timeout 30",
+  "exit_code": 0,
+  "stdout": [
+    "Query: burdamısın --timeout 30",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "Needs clarification: what command or operation should run with --timeout 30?",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260916_032830_881b0a",
+    "",
+    "Session:        20260916_032830_881b0a",
+    "Duration:       17s",
+    "Messages:       2 (1 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-16T03:28:49.041319"
+}

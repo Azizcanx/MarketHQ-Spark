@@ -1,0 +1,17 @@
+{
+  "engine": "MARKETHQ_ADAPTIVE_BRAIN",
+  "version": "V1",
+  "generated_at": "2026-09-16T14:07:14.175206+00:00",
+  "outcome_summary": {
+    "total": 1,
+    "hit_target": 0,
+    "hit_invalidation": 0,
+    "open": 1,
+    "win_rate": 0.0,
+    "avg_pnl": null,
+    "avg_quality": 0.643
+  },
+  "learning_recommendations": [],
+  "research_questions": [],
+  "top_setup": null
+}

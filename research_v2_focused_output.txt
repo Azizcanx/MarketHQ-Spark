@@ -1,0 +1,534 @@
+Downloading THYAO.IS 15m...
+/opt/markethq/research_v2_focused.py:33: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="60d", interval=interval, progress=False)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+Downloading THYAO.IS 1h...
+/opt/markethq/research_v2_focused.py:33: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="60d", interval=interval, progress=False)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+Downloading GARAN.IS 15m...
+/opt/markethq/research_v2_focused.py:33: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="60d", interval=interval, progress=False)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+Downloading GARAN.IS 1h...
+/opt/markethq/research_v2_focused.py:33: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="60d", interval=interval, progress=False)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+Downloading AKBNK.IS 15m...
+/opt/markethq/research_v2_focused.py:33: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="60d", interval=interval, progress=False)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+Downloading AKBNK.IS 1h...
+/opt/markethq/research_v2_focused.py:33: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="60d", interval=interval, progress=False)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+Downloading SAHOL.IS 15m...
+/opt/markethq/research_v2_focused.py:33: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="60d", interval=interval, progress=False)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+Downloading SAHOL.IS 1h...
+/opt/markethq/research_v2_focused.py:33: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="60d", interval=interval, progress=False)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+Downloading DOAS.IS 15m...
+/opt/markethq/research_v2_focused.py:33: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="60d", interval=interval, progress=False)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:432: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  return _pd.Timedelta(interval)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+Downloading DOAS.IS 1h...
+/opt/markethq/research_v2_focused.py:33: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  df = yf.download(symbol, period="60d", interval=interval, progress=False)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:432: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  return _pd.Timedelta(interval)
+/opt/markethq/.venv/lib/python3.12/site-packages/yfinance/utils.py:612: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  last_rows_same_interval = (dt2 - dt1) < _pd.Timedelta(interval)
+  THYAO.IS 15m ema_trend_v1...
+  THYAO.IS 15m rsi_reversal_v1...
+  THYAO.IS 15m donchian_breakout_v1...
+  THYAO.IS 15m supertrend_v1...
+  THYAO.IS 15m adx_v1...
+  THYAO.IS 15m vwap_v1...
+  THYAO.IS 15m bollinger_v1...
+  THYAO.IS 15m atr_breakout_v1...
+  THYAO.IS 15m stoch_reversal_v1...
+  THYAO.IS 15m rs_benchmark_v1...
+  THYAO.IS 15m smc_structure_v1...
+  THYAO.IS 15m or_breakout_v1...
+  THYAO.IS 1h ema_trend_v1...
+  THYAO.IS 1h rsi_reversal_v1...
+  THYAO.IS 1h donchian_breakout_v1...
+  THYAO.IS 1h supertrend_v1...
+  THYAO.IS 1h adx_v1...
+  THYAO.IS 1h vwap_v1...
+  THYAO.IS 1h bollinger_v1...
+  THYAO.IS 1h atr_breakout_v1...
+  THYAO.IS 1h stoch_reversal_v1...
+  THYAO.IS 1h rs_benchmark_v1...
+  THYAO.IS 1h smc_structure_v1...
+  THYAO.IS 1h or_breakout_v1...
+  GARAN.IS 15m ema_trend_v1...
+  GARAN.IS 15m rsi_reversal_v1...
+  GARAN.IS 15m donchian_breakout_v1...
+  GARAN.IS 15m supertrend_v1...
+  GARAN.IS 15m adx_v1...
+  GARAN.IS 15m vwap_v1...
+  GARAN.IS 15m bollinger_v1...
+  GARAN.IS 15m atr_breakout_v1...
+  GARAN.IS 15m stoch_reversal_v1...
+  GARAN.IS 15m rs_benchmark_v1...
+  GARAN.IS 15m smc_structure_v1...
+  GARAN.IS 15m or_breakout_v1...
+  GARAN.IS 1h ema_trend_v1...
+  GARAN.IS 1h rsi_reversal_v1...
+  GARAN.IS 1h donchian_breakout_v1...
+  GARAN.IS 1h supertrend_v1...
+  GARAN.IS 1h adx_v1...
+  GARAN.IS 1h vwap_v1...
+  GARAN.IS 1h bollinger_v1...
+  GARAN.IS 1h atr_breakout_v1...
+  GARAN.IS 1h stoch_reversal_v1...
+  GARAN.IS 1h rs_benchmark_v1...
+  GARAN.IS 1h smc_structure_v1...
+  GARAN.IS 1h or_breakout_v1...
+  AKBNK.IS 15m ema_trend_v1...
+  AKBNK.IS 15m rsi_reversal_v1...
+  AKBNK.IS 15m donchian_breakout_v1...
+  AKBNK.IS 15m supertrend_v1...
+  AKBNK.IS 15m adx_v1...
+  AKBNK.IS 15m vwap_v1...
+  AKBNK.IS 15m bollinger_v1...
+  AKBNK.IS 15m atr_breakout_v1...
+  AKBNK.IS 15m stoch_reversal_v1...
+  AKBNK.IS 15m rs_benchmark_v1...
+  AKBNK.IS 15m smc_structure_v1...
+  AKBNK.IS 15m or_breakout_v1...
+  AKBNK.IS 1h ema_trend_v1...
+  AKBNK.IS 1h rsi_reversal_v1...
+  AKBNK.IS 1h donchian_breakout_v1...
+  AKBNK.IS 1h supertrend_v1...
+  AKBNK.IS 1h adx_v1...
+  AKBNK.IS 1h vwap_v1...
+  AKBNK.IS 1h bollinger_v1...
+  AKBNK.IS 1h atr_breakout_v1...
+  AKBNK.IS 1h stoch_reversal_v1...
+  AKBNK.IS 1h rs_benchmark_v1...
+  AKBNK.IS 1h smc_structure_v1...
+  AKBNK.IS 1h or_breakout_v1...
+  SAHOL.IS 15m ema_trend_v1...
+  SAHOL.IS 15m rsi_reversal_v1...
+  SAHOL.IS 15m donchian_breakout_v1...
+  SAHOL.IS 15m supertrend_v1...
+  SAHOL.IS 15m adx_v1...
+  SAHOL.IS 15m vwap_v1...
+  SAHOL.IS 15m bollinger_v1...
+  SAHOL.IS 15m atr_breakout_v1...
+  SAHOL.IS 15m stoch_reversal_v1...
+  SAHOL.IS 15m rs_benchmark_v1...
+  SAHOL.IS 15m smc_structure_v1...
+  SAHOL.IS 15m or_breakout_v1...
+  SAHOL.IS 1h ema_trend_v1...
+  SAHOL.IS 1h rsi_reversal_v1...
+  SAHOL.IS 1h donchian_breakout_v1...
+  SAHOL.IS 1h supertrend_v1...
+  SAHOL.IS 1h adx_v1...
+  SAHOL.IS 1h vwap_v1...
+  SAHOL.IS 1h bollinger_v1...
+  SAHOL.IS 1h atr_breakout_v1...
+  SAHOL.IS 1h stoch_reversal_v1...
+  SAHOL.IS 1h rs_benchmark_v1...
+  SAHOL.IS 1h smc_structure_v1...
+  SAHOL.IS 1h or_breakout_v1...
+  DOAS.IS 15m ema_trend_v1...
+  DOAS.IS 15m rsi_reversal_v1...
+  DOAS.IS 15m donchian_breakout_v1...
+  DOAS.IS 15m supertrend_v1...
+  DOAS.IS 15m adx_v1...
+  DOAS.IS 15m vwap_v1...
+  DOAS.IS 15m bollinger_v1...
+  DOAS.IS 15m atr_breakout_v1...
+  DOAS.IS 15m stoch_reversal_v1...
+  DOAS.IS 15m rs_benchmark_v1...
+  DOAS.IS 15m smc_structure_v1...
+  DOAS.IS 15m or_breakout_v1...
+  DOAS.IS 1h ema_trend_v1...
+  DOAS.IS 1h rsi_reversal_v1...
+  DOAS.IS 1h donchian_breakout_v1...
+  DOAS.IS 1h supertrend_v1...
+  DOAS.IS 1h adx_v1...
+  DOAS.IS 1h vwap_v1...
+  DOAS.IS 1h bollinger_v1...
+  DOAS.IS 1h atr_breakout_v1...
+  DOAS.IS 1h stoch_reversal_v1...
+  DOAS.IS 1h rs_benchmark_v1...
+  DOAS.IS 1h smc_structure_v1...
+  DOAS.IS 1h or_breakout_v1...
+WFO MC THYAO.IS 15m ema_trend_v1...
+WFO MC THYAO.IS 15m rsi_reversal_v1...
+WFO MC THYAO.IS 15m donchian_breakout_v1...
+WFO MC THYAO.IS 15m supertrend_v1...
+WFO MC THYAO.IS 15m adx_v1...
+WFO MC THYAO.IS 15m vwap_v1...
+WFO MC THYAO.IS 15m bollinger_v1...
+WFO MC THYAO.IS 15m atr_breakout_v1...
+WFO MC THYAO.IS 15m stoch_reversal_v1...
+WFO MC THYAO.IS 15m rs_benchmark_v1...
+WFO MC THYAO.IS 15m smc_structure_v1...
+WFO MC THYAO.IS 15m or_breakout_v1...
+WFO MC THYAO.IS 1h ema_trend_v1...
+WFO MC THYAO.IS 1h rsi_reversal_v1...
+WFO MC THYAO.IS 1h donchian_breakout_v1...
+WFO MC THYAO.IS 1h supertrend_v1...
+WFO MC THYAO.IS 1h adx_v1...
+WFO MC THYAO.IS 1h vwap_v1...
+WFO MC THYAO.IS 1h bollinger_v1...
+WFO MC THYAO.IS 1h atr_breakout_v1...
+WFO MC THYAO.IS 1h stoch_reversal_v1...
+WFO MC THYAO.IS 1h rs_benchmark_v1...
+WFO MC THYAO.IS 1h smc_structure_v1...
+WFO MC THYAO.IS 1h or_breakout_v1...
+
+================================================================================
+VICTOR BT RESEARCH PIPELINE V2
+================================================================================
+
+1. DATASET COVERAGE:
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_15m: OK (1946 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   THYAO.IS_1h: OK (531 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_15m: OK (1946 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   GARAN.IS_1h: OK (531 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_15m: OK (1946 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   AKBNK.IS_1h: OK (531 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_15m: OK (1946 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   SAHOL.IS_1h: OK (531 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_15m: OK (1946 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+   DOAS.IS_1h: OK (531 bars)
+
+2. GENERAL RESULTS:
+   symbol       tf    strategy               trades     net%  sharpe  WFO  MC
+   ----------------------------------------------------------------------
+   THYAO.IS     15m   ema_trend_v1               19    -9.17   -0.48   2f   Y
+   THYAO.IS     15m   rsi_reversal_v1            39   -15.31   -1.41   2f   Y
+   THYAO.IS     15m   donchian_breakout_v1       47   -12.06   -1.11   2f   Y
+   THYAO.IS     15m   supertrend_v1              25    -1.68   -0.05   2f   Y
+   THYAO.IS     15m   adx_v1                     58   -28.88   -1.74   2f   Y
+   THYAO.IS     15m   vwap_v1                    63    -7.10   -0.31   2f   Y
+   THYAO.IS     15m   bollinger_v1               77   -21.86   -2.14   2f   Y
+   THYAO.IS     15m   atr_breakout_v1            32    -8.34   -1.18   2f   Y
+   THYAO.IS     15m   stoch_reversal_v1          82   -26.68   -3.09   2f   Y
+   THYAO.IS     15m   rs_benchmark_v1             0     0.00       -   2f   N
+   THYAO.IS     15m   smc_structure_v1           28     0.23    0.03   2f   Y
+   THYAO.IS     15m   or_breakout_v1              0     0.00       -   2f   N
+   THYAO.IS     1h    ema_trend_v1                6   -16.90   -2.38   2f   Y
+   THYAO.IS     1h    rsi_reversal_v1             9    -5.38   -0.84   2f   Y
+   THYAO.IS     1h    donchian_breakout_v1       11    -4.01   -1.80   2f   Y
+   THYAO.IS     1h    supertrend_v1               8    -6.81   -0.62   2f   Y
+   THYAO.IS     1h    adx_v1                     14    -7.95   -0.72   2f   Y
+   THYAO.IS     1h    vwap_v1                     0     0.00       -   2f   N
+   THYAO.IS     1h    bollinger_v1               16    -9.02   -2.56   2f   Y
+   THYAO.IS     1h    atr_breakout_v1             4    -3.43   -1.68   2f   Y
+   THYAO.IS     1h    stoch_reversal_v1          20    -7.35   -1.72   2f   Y
+   THYAO.IS     1h    rs_benchmark_v1             0     0.00       -   2f   N
+   THYAO.IS     1h    smc_structure_v1            9    -7.74   -0.65   2f   Y
+   THYAO.IS     1h    or_breakout_v1              0     0.00       -   2f   N
+   GARAN.IS     15m   ema_trend_v1               22   -10.38   -0.48   0f   N
+   GARAN.IS     15m   rsi_reversal_v1            29    -9.29   -0.81   0f   N
+   GARAN.IS     15m   donchian_breakout_v1       47   -13.51   -1.38   0f   N
+   GARAN.IS     15m   supertrend_v1              29   -12.15   -0.51   0f   N
+   GARAN.IS     15m   adx_v1                     53   -16.94   -0.85   0f   N
+   GARAN.IS     15m   vwap_v1                    59   -12.74   -0.53   0f   N
+   GARAN.IS     15m   bollinger_v1               65   -14.43   -1.24   0f   N
+   GARAN.IS     15m   atr_breakout_v1            31   -11.13   -1.63   0f   N
+   GARAN.IS     15m   stoch_reversal_v1          75   -20.29   -2.12   0f   N
+   GARAN.IS     15m   rs_benchmark_v1             0     0.00       -   0f   N
+   GARAN.IS     15m   smc_structure_v1           30    -5.13   -0.20   0f   N
+   GARAN.IS     15m   or_breakout_v1              0     0.00       -   0f   N
+   GARAN.IS     1h    ema_trend_v1                4    -6.12   -0.54   0f   N
+   GARAN.IS     1h    rsi_reversal_v1             8     0.51    0.09   0f   N
+   GARAN.IS     1h    donchian_breakout_v1       13    -6.86   -2.48   0f   N
+   GARAN.IS     1h    supertrend_v1               7    -6.65   -0.50   0f   N
+   GARAN.IS     1h    adx_v1                     14    -6.69   -0.62   0f   N
+   GARAN.IS     1h    vwap_v1                     0     0.00       -   0f   N
+   GARAN.IS     1h    bollinger_v1               19    -4.97   -1.68   0f   N
+   GARAN.IS     1h    atr_breakout_v1            11    -5.97   -2.74   0f   N
+   GARAN.IS     1h    stoch_reversal_v1          16     0.13    0.05   0f   N
+   GARAN.IS     1h    rs_benchmark_v1             0     0.00       -   0f   N
+   GARAN.IS     1h    smc_structure_v1            8    -6.02   -0.50   0f   N
+   GARAN.IS     1h    or_breakout_v1              0     0.00       -   0f   N
+   AKBNK.IS     15m   ema_trend_v1               22   -13.52   -0.57   0f   N
+   AKBNK.IS     15m   rsi_reversal_v1            36    -7.94   -0.57   0f   N
+   AKBNK.IS     15m   donchian_breakout_v1       50   -14.21   -1.02   0f   N
+   AKBNK.IS     15m   supertrend_v1              31    -9.19   -0.30   0f   N
+   AKBNK.IS     15m   adx_v1                     54   -14.29   -0.58   0f   N
+   AKBNK.IS     15m   vwap_v1                    59    -4.14   -0.13   0f   N
+   AKBNK.IS     15m   bollinger_v1               68   -15.92   -1.11   0f   N
+   AKBNK.IS     15m   atr_breakout_v1            38    -9.21   -1.29   0f   N
+   AKBNK.IS     15m   stoch_reversal_v1          90   -24.53   -1.75   0f   N
+   AKBNK.IS     15m   rs_benchmark_v1             0     0.00       -   0f   N
+   AKBNK.IS     15m   smc_structure_v1           32   -11.03   -0.44   0f   N
+   AKBNK.IS     15m   or_breakout_v1              0     0.00       -   0f   N
+   AKBNK.IS     1h    ema_trend_v1                4    -4.32   -0.28   0f   N
+   AKBNK.IS     1h    rsi_reversal_v1            10    -4.56   -0.39   0f   N
+   AKBNK.IS     1h    donchian_breakout_v1       18    -9.60   -2.91   0f   N
+   AKBNK.IS     1h    supertrend_v1               7     1.12    0.12   0f   N
+   AKBNK.IS     1h    adx_v1                     12    -4.89   -0.33   0f   N
+   AKBNK.IS     1h    vwap_v1                     0     0.00       -   0f   N
+   AKBNK.IS     1h    bollinger_v1               13    -9.59   -1.65   0f   N
+   AKBNK.IS     1h    atr_breakout_v1            14    -8.19   -2.44   0f   N
+   AKBNK.IS     1h    stoch_reversal_v1          25    -7.62   -1.32   0f   N
+   AKBNK.IS     1h    rs_benchmark_v1             0     0.00       -   0f   N
+   AKBNK.IS     1h    smc_structure_v1            8     1.88    0.17   0f   N
+   AKBNK.IS     1h    or_breakout_v1              0     0.00       -   0f   N
+   SAHOL.IS     15m   ema_trend_v1               23   -13.83   -0.67   0f   N
+   SAHOL.IS     15m   rsi_reversal_v1            28   -15.91   -1.26   0f   N
+   SAHOL.IS     15m   donchian_breakout_v1       52   -13.48   -1.32   0f   N
+   SAHOL.IS     15m   supertrend_v1              26    -4.76   -0.19   0f   N
+   SAHOL.IS     15m   adx_v1                     57   -14.05   -0.69   0f   N
+   SAHOL.IS     15m   vwap_v1                    66   -13.92   -0.63   0f   N
+   SAHOL.IS     15m   bollinger_v1               63   -19.05   -1.61   0f   N
+   SAHOL.IS     15m   atr_breakout_v1            27    -7.14   -1.45   0f   N
+   SAHOL.IS     15m   stoch_reversal_v1          77   -23.53   -2.39   0f   N
+   SAHOL.IS     15m   rs_benchmark_v1             0     0.00       -   0f   N
+   SAHOL.IS     15m   smc_structure_v1           40   -15.53   -0.76   0f   N
+   SAHOL.IS     15m   or_breakout_v1              0     0.00       -   0f   N
+   SAHOL.IS     1h    ema_trend_v1                2    -0.33    0.01   0f   N
+   SAHOL.IS     1h    rsi_reversal_v1             6    -6.31   -0.76   0f   N
+   SAHOL.IS     1h    donchian_breakout_v1       13    -4.61   -1.24   0f   N
+   SAHOL.IS     1h    supertrend_v1               7    -0.31    0.02   0f   N
+   SAHOL.IS     1h    adx_v1                     12    -5.45   -0.63   0f   N
+   SAHOL.IS     1h    vwap_v1                     0     0.00       -   0f   N
+   SAHOL.IS     1h    bollinger_v1               13    -9.77   -2.47   0f   N
+   SAHOL.IS     1h    atr_breakout_v1             9    -3.03   -0.98   0f   N
+   SAHOL.IS     1h    stoch_reversal_v1          27    -1.40   -0.16   0f   N
+   SAHOL.IS     1h    rs_benchmark_v1             0     0.00       -   0f   N
+   SAHOL.IS     1h    smc_structure_v1           10   -13.80   -1.15   0f   N
+   SAHOL.IS     1h    or_breakout_v1              0     0.00       -   0f   N
+   DOAS.IS      15m   ema_trend_v1               14   -12.34   -0.52   0f   N
+   DOAS.IS      15m   rsi_reversal_v1            31   -12.83   -1.45   0f   N
+   DOAS.IS      15m   donchian_breakout_v1       50   -14.60   -1.94   0f   N
+   DOAS.IS      15m   supertrend_v1              29   -14.25   -0.58   0f   N
+   DOAS.IS      15m   adx_v1                     55   -17.17   -1.14   0f   N
+   DOAS.IS      15m   vwap_v1                    59    -8.85   -0.50   0f   N
+   DOAS.IS      15m   bollinger_v1               57   -17.40   -1.99   0f   N
+   DOAS.IS      15m   atr_breakout_v1            33   -10.35   -2.21   0f   N
+   DOAS.IS      15m   stoch_reversal_v1          87   -25.38   -4.33   0f   N
+   DOAS.IS      15m   rs_benchmark_v1             0     0.00       -   0f   N
+   DOAS.IS      15m   smc_structure_v1           38   -16.51   -0.68   0f   N
+   DOAS.IS      15m   or_breakout_v1              0     0.00       -   0f   N
+   DOAS.IS      1h    ema_trend_v1                4   -10.60   -0.81   0f   N
+   DOAS.IS      1h    rsi_reversal_v1            11    -6.77   -1.44   0f   N
+   DOAS.IS      1h    donchian_breakout_v1       17    -6.45   -2.02   0f   N
+   DOAS.IS      1h    supertrend_v1              11   -16.12   -1.24   0f   N
+   DOAS.IS      1h    adx_v1                     11    -8.30   -1.26   0f   N
+   DOAS.IS      1h    vwap_v1                     0     0.00       -   0f   N
+   DOAS.IS      1h    bollinger_v1               12    -8.02   -2.95   0f   N
+   DOAS.IS      1h    atr_breakout_v1            12    -2.91   -0.86   0f   N
+   DOAS.IS      1h    stoch_reversal_v1          33    -5.52   -1.44   0f   N
+   DOAS.IS      1h    rs_benchmark_v1             0     0.00       -   0f   N
+   DOAS.IS      1h    smc_structure_v1            8   -12.85   -1.00   0f   N
+   DOAS.IS      1h    or_breakout_v1              0     0.00       -   0f   N
+
+3. WFO VALIDATION (THYAO.IS):
+   tf    strategy               folds   train%     oos%    leak  consist
+   -----------------------------------------------------------------
+   15m   ema_trend_v1               1     3.45        -       -        N
+   15m   ema_trend_v1               1    -1.24        -       -        N
+   15m   rsi_reversal_v1            1    -0.07    -0.37   -0.30        Y
+   15m   rsi_reversal_v1            1    -0.52    -0.83   -0.31        Y
+   15m   donchian_breakout_v1       1     1.27    -0.82   -2.09        N
+   15m   donchian_breakout_v1       1     2.27    -1.20   -3.47        N
+   15m   supertrend_v1              1     3.38    -6.03   -9.41        N
+   15m   supertrend_v1              1    -0.94     0.69    1.62        N
+   15m   adx_v1                     1    -0.37    -6.79   -6.42        Y
+   15m   adx_v1                     1    -5.79    -1.05    4.74        Y
+   15m   vwap_v1                    1    -1.07    -0.72    0.35        Y
+   15m   vwap_v1                    1     0.23     0.62    0.39        Y
+   15m   bollinger_v1               1    -0.76    -2.03   -1.28        Y
+   15m   bollinger_v1               1    -2.56    -2.41    0.15        Y
+   15m   atr_breakout_v1            1    -1.46        -       -        N
+   15m   atr_breakout_v1            1     0.09    -0.97   -1.06        N
+   15m   stoch_reversal_v1          1    -1.42    -3.07   -1.65        Y
+   15m   stoch_reversal_v1          1    -3.57    -1.73    1.85        Y
+   15m   rs_benchmark_v1            1        -        -       -        N
+   15m   rs_benchmark_v1            1        -        -       -        N
+   15m   smc_structure_v1           1     3.05    -1.49   -4.54        N
+   15m   smc_structure_v1           1     2.07     0.84   -1.22        Y
+   15m   or_breakout_v1             1        -        -       -        N
+   15m   or_breakout_v1             1        -        -       -        N
+   1h    ema_trend_v1               1   -12.23        -       -        N
+   1h    ema_trend_v1               1    -3.46    -1.76    1.70        Y
+   1h    rsi_reversal_v1            1    -0.49     0.12    0.61        N
+   1h    rsi_reversal_v1            1    -0.46    -2.68   -2.22        Y
+   1h    donchian_breakout_v1       1    -2.89    -0.30    2.59        Y
+   1h    donchian_breakout_v1       1    -1.88        -       -        N
+   1h    supertrend_v1              1    -4.78    -0.31    4.46        Y
+   1h    supertrend_v1              1    -6.82    -1.51    5.31        Y
+   1h    adx_v1                     1    -1.32    -1.22    0.10        Y
+   1h    adx_v1                     1    -5.95    -2.21    3.74        Y
+   1h    vwap_v1                    1        -        -       -        N
+   1h    vwap_v1                    1        -        -       -        N
+   1h    bollinger_v1               1    -1.30    -0.75    0.55        Y
+   1h    bollinger_v1               1    -2.61    -2.50    0.11        Y
+   1h    atr_breakout_v1            1    -3.43        -       -        N
+   1h    atr_breakout_v1            1    -0.83        -       -        N
+   1h    stoch_reversal_v1          1    -6.59     0.79    7.39        N
+   1h    stoch_reversal_v1          1     0.30    -1.05   -1.35        N
+   1h    rs_benchmark_v1            1        -        -       -        N
+   1h    rs_benchmark_v1            1        -        -       -        N
+   1h    smc_structure_v1           1    -4.10    -1.35    2.75        Y
+   1h    smc_structure_v1           1    -4.10        -       -        N
+   1h    or_breakout_v1             1        -        -       -        N
+   1h    or_breakout_v1             1        -        -       -        N
+
+4. MONTE CARLO (THYAO.IS):
+   tf    strategy               avail     median        p05        p95  posProb
+   ----------------------------------------------------------------------
+   15m   ema_trend_v1               Y   -9002.45  -14558.18   -2915.92     0.02
+   15m   rsi_reversal_v1            Y  -15927.95  -22097.79   -8914.68      0.0
+   15m   donchian_breakout_v1       Y  -11884.52  -22408.34    -3685.4     0.02
+   15m   supertrend_v1              Y   -1126.24  -15300.32   17372.16     0.46
+   15m   adx_v1                     Y  -29520.27  -38935.76  -21609.34      0.0
+   15m   vwap_v1                    Y   -6461.15  -19799.64    7271.76      0.3
+   15m   bollinger_v1               Y  -22361.81  -29307.79  -15131.57      0.0
+   15m   atr_breakout_v1            Y   -9516.78  -13078.17   -3942.95      0.0
+   15m   stoch_reversal_v1          Y  -27293.47  -31963.68  -21938.85      0.0
+   15m   rs_benchmark_v1            N          -          -          -        -
+   15m   smc_structure_v1           Y    3584.51  -10537.48   15012.27     0.62
+   15m   or_breakout_v1             N          -          -          -        -
+   1h    ema_trend_v1               Y  -16568.64  -24644.74  -11259.58      0.0
+   1h    rsi_reversal_v1            Y   -4694.67  -11247.98    -580.58     0.02
+   1h    donchian_breakout_v1       Y   -4408.09   -6035.29   -2702.69      0.0
+   1h    supertrend_v1              Y   -6459.05  -17555.51    5929.13      0.2
+   1h    adx_v1                     Y   -6297.96  -17530.16     2291.6      0.1
+   1h    vwap_v1                    N          -          -          -        -
+   1h    bollinger_v1               Y   -8612.11  -17270.57   -4010.75     0.02
+   1h    atr_breakout_v1            Y   -3434.68   -5360.56   -2130.01      0.0
+   1h    stoch_reversal_v1          Y    -8238.9  -13852.11   -4009.29      0.0
+   1h    rs_benchmark_v1            N          -          -          -        -
+   1h    smc_structure_v1           Y   -7518.26  -14862.64   -2300.65     0.02
+   1h    or_breakout_v1             N          -          -          -        -
+
+5. KEY QUESTIONS:
+   a) WFO works: 24/24 THYAO.IS combos have WFO folds
+   b) MC works: 19/24 THYAO.IS combos have MC results
+   c) XU100.IS: SKIP (NAType bug fixed in signal_engine.py)
+   d) Full results: 120 combos in JSON

@@ -1,0 +1,30 @@
+{
+  "run_id": "agentspace_20260919_032431",
+  "task": "selam",
+  "exit_code": 0,
+  "stdout": [
+    "Warning: Unknown toolsets: mcp-codegraph",
+    "Query: [Context: Session:        20260919_032359_92b07c Title:          ",
+    "[Context: Session: 20260919_032151_f12c23… Duration:       8s Messages:       2 ",
+    "(1 user, 0 tool calls) ] selam",
+    "Initializing agent...",
+    "────────────────────────────────────────",
+    "",
+    "",
+    "╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮",
+    "Selam! Neredeyim, size nasıl yardımcı olabilirim?",
+    "╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "Resume this session with:",
+    "  hermes --resume 20260919_032423_db41d9",
+    "  hermes -c \"[Context: Session: 20260919_032359_92b07c…\"",
+    "",
+    "Session:        20260919_032423_db41d9",
+    "Title:          [Context: Session: 20260919_032359_92b07c…",
+    "Duration:       7s",
+    "Messages:       2 (1 user, 0 tool calls)",
+    ""
+  ],
+  "stderr": [],
+  "timestamp": "2026-09-19T03:24:31.663935"
+}

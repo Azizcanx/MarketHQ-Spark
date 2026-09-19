@@ -1,0 +1,208 @@
+{
+  "setup": {
+    "setup_id": "setup_5m_20260916_170731",
+    "symbol": "AAPL",
+    "timeframe": "5m",
+    "direction": "LONG",
+    "entry_price": 333.94500732421875,
+    "entry_zone": [
+      333.69182586183956,
+      334.19818878659794
+    ],
+    "atr": 1.012725849516717,
+    "regime": "UPTREND",
+    "supporting": [
+      "ema_trend_v1",
+      "supertrend_v1",
+      "adx_v1",
+      "vwap_v1"
+    ],
+    "opposing": [],
+    "agreement": {
+      "long": 4,
+      "short": 0,
+      "neutral": 8,
+      "consensus": "LONG",
+      "conflict": false,
+      "total": 12,
+      "share": 0.333,
+      "weighted": {
+        "lean": "LONG",
+        "long_w": 4.69,
+        "short_w": 0.0,
+        "regime": "UPTREND",
+        "demoted": [
+          "ema_trend_v1",
+          "adx_v1",
+          "smc_structure_v1"
+        ]
+      }
+    },
+    "strategies": [
+      {
+        "strategy_id": "ema_trend_v1",
+        "direction": "LONG",
+        "confidence": 0.29035778903103565,
+        "reason": "EMA20(332.38)>EMA50(331.42)",
+        "family": "trend"
+      },
+      {
+        "strategy_id": "rsi_reversal_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "RSI 63.1 notr",
+        "family": "mean_reversion"
+      },
+      {
+        "strategy_id": "donchian_breakout_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "kanal ici",
+        "family": "breakout"
+      },
+      {
+        "strategy_id": "supertrend_v1",
+        "direction": "LONG",
+        "confidence": 0.7,
+        "reason": "SuperTrend LONG",
+        "family": "trend"
+      },
+      {
+        "strategy_id": "adx_v1",
+        "direction": "LONG",
+        "confidence": 1.0,
+        "reason": "ADX 36.2 +DI>-DI",
+        "family": "trend"
+      },
+      {
+        "strategy_id": "vwap_v1",
+        "direction": "LONG",
+        "confidence": 0.22691086947629083,
+        "reason": "Close VWAP uzeri (+0.45%)",
+        "family": "volume"
+      },
+      {
+        "strategy_id": "bollinger_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "BB ici",
+        "family": "mean_reversion"
+      },
+      {
+        "strategy_id": "atr_breakout_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "genisleme yok",
+        "family": "breakout"
+      },
+      {
+        "strategy_id": "stoch_reversal_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "%K 72.7 notr",
+        "family": "mean_reversion"
+      },
+      {
+        "strategy_id": "rs_benchmark_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "benchmark yok",
+        "family": "relative"
+      },
+      {
+        "strategy_id": "smc_structure_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "CHoCH ama sweep yok",
+        "event": "CHoCH",
+        "invalidation": null,
+        "target": null,
+        "family": "structure"
+      },
+      {
+        "strategy_id": "or_breakout_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "kapanış aralık içinde (333.15–334.36)",
+        "family": "breakout"
+      }
+    ],
+    "research_only": true,
+    "invalidation": 331.9195556251853,
+    "target": 336.9831848727689,
+    "invalidation_rule": "LONG iptal: kapanis stop (331.9195556251853) disi",
+    "target_rule": "ATR x3.0 hedef (336.9831848727689)"
+  },
+  "model": "SetupModel(setup_id='setup_5m_20260916_170731', symbol='AAPL', timeframe='5m', generated_at='2026-09-16T17:07:31.712094', market=MarketInfo(symbol='AAPL', market='crypto', exchange='', data_source='yfinance'), timeframe_info=TimeframeInfo(timeframe='5m', bar_count=710, date_range_start='', date_range_end=''), regime=RegimeInfo(regime='UPTREND', confidence=0.8, sma_fast=331.8371292114258, sma_slow=330.8601086425781, detail='SMA_FAST=331.84 > SMA_SLOW=330.86'), bias=BiasInfo(direction='LONG', bias_strength=0, reason='LONG konsensüsü — 0 strateji'), structure=StructureInfo(has_structure=True, structure_type='', swing_highs=[{'price': 330.8699951171875, 'idx': 658}, {'price': 330.7799987792969, 'idx': 675}, {'price': 330.8299865722656, 'idx': 679}, {'price': 330.5899963378906, 'idx': 690}, {'price': 335.4800109863281, 'idx': 703}], swing_lows=[{'price': 330.0899963378906, 'idx': 684}, {'price': 330.04998779296875, 'idx': 688}, {'price': 329.8299865722656, 'idx': 693}, {'price': 329.8500061035156, 'idx': 697}, {'price': 329.8500061035156, 'idx': 698}], last_swing_high=335.4800109863281, last_swing_low=329.8500061035156, displacement=0.0, displacement_quality='none'), liquidity=LiquidityInfo(buy_side_liquidity=335.4800109863281, sell_side_liquidity=329.8299865722656, liquidity_sweep_detected=False, liquidity_side='', sweep_distance_atr=0.0, description='buy-side likidite: 335.4800; sell-side likidite: 329.8300'), setup_type='indicator_uptrend_long', entry_zone=EntryZone(center=333.94500732421875, low=333.69182586183956, high=334.19818878659794, width_atr=0.5, source='atr_based', quality='medium', touches=1), confirmation=Confirmation(strategy_count=12, strategies=[{'id': 'ema_trend_v1', 'direction': 'LONG', 'confidence': 0.29035778903103565}, {'id': 'rsi_reversal_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'donchian_breakout_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'supertrend_v1', 'direction': 'LONG', 'confidence': 0.7}, {'id': 'adx_v1', 'direction': 'LONG', 'confidence': 1.0}, {'id': 'vwap_v1', 'direction': 'LONG', 'confidence': 0.22691086947629083}, {'id': 'bollinger_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'atr_breakout_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'stoch_reversal_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'rs_benchmark_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'smc_structure_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'or_breakout_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}], family_agreement={}, agreement_score=0, strongest_indicator='', disqualifiers=[], family_conflicts=[]), invalidation=InvalidationLevel(price=331.9195556251853, distance_atr=2.000000000000019, type='structural', clarity='clear', reasoning='ATR×2.0 stop-loss — 331.9196'), targets=Targets(primary=TargetLevel(price=336.9831848727689, distance_atr=3.000000000000001, type='ATR_target', priority='primary', reasoning='ATR×3.0 hedef — 336.9832'), secondary=None, trailing=None), risk_reward=RiskReward(reward_risk_ratio=1.5, reward=3.0382, risk=2.0255, breakeven_age=0.5, feasibility='medium'), supporting_strategies=['ema_trend_v1', 'supertrend_v1', 'adx_v1', 'vwap_v1'], conflicting_strategies=[], evidence=Evidence(supporting=[{'source': 'ema_trend_v1', 'type': 'strategy'}, {'source': 'supertrend_v1', 'type': 'strategy'}, {'source': 'adx_v1', 'type': 'strategy'}, {'source': 'vwap_v1', 'type': 'strategy'}], conflicting=[], neutral=[], evidence_score=0), historical_validation=HistoricalValidation(available=False, similar_count=0, win_rate=None, avg_return=None, avg_return_20d=None, best_return=None, worst_return=None, regime_match='UPTREND', lookup_method='setup_signature', notes='Yetersiz veri (0/3 örnek)'), quality=QualityScore(overall=0.686, supporting_evidence=1.0, conflicting_evidence=1.0, regime_compatibility=0.85, structure_quality=0.4, entry_quality=0.8, risk_reward_feasibility=0.55, historical_validation=0.2, strategy_agreement=0.3, invalidation_clarity=1.0, breakdown={'supporting_evidence': 1.0, 'conflicting_evidence': 1.0, 'regime_compatibility': 0.85, 'structure_quality': 0.4, 'entry_quality': 0.8, 'risk_reward_feasibility': 0.55, 'historical_validation': 0.2, 'strategy_agreement': 0.3, 'invalidation_clarity': 1.0, 'formation_chain': 0.833}, flags=['YUKSEK_VOLATILITE: ATR geniş, invalidation uzakta', 'RESEARCH_ONLY: canli islem yok']), reasoning=Reasoning(entry_rationale=['Entry zone [333.6918, 334.1982] — ATR bazli ±0.50x ATR', 'Rejim: UPTREND — yukari direction', 'Strateji destegi: 4/12 strateji'], invalidation_rationale=[\"Stop-loss 331.9196 — entry'den 2.0255 uzakta\"], target_rationale=['Hedef 336.9832 — 1.5:1 R:R'], regime_context='UPTREND', agreement_summary='LONG (0%)', key_insight='Setup: indicator_uptrend_long | Regime: UPTREND | Direction: LONG', warnings=[]), invalidation_conditions=InvalidationConditions(price_condition='Kapanis 331.9196 altina cikarsa iptal', time_condition='', alternative_signal='', manual_override=''), outcome=Outcome(executed=False, entry_price=None, exit_price=None, pnl_pct=None, hit_target=False, hit_invalidation=False, duration_bars=0, max_favorable=None, max_adverse=None), learning_metadata=LearningMetadata(setup_type_signature='indicator_uptrend_long', regime='UPTREND', confirmation_combo='', learning_priority=0.686, next_research_question='Bu setup tipi (indicator_uptrend_long) UPTREND ortaminda ne kadar surekli calisir?', strategy_evolution_hint=''), research_only=True, engine='MARKETHQ_RESEARCH_SETUP_ENGINE', version='V1')",
+  "why_panel": {
+    "entry_rationale": [
+      "Entry zone [333.6918, 334.1982] — ATR bazli ±0.50x ATR",
+      "Rejim: UPTREND — yukari direction",
+      "Strateji destegi: 4/12 strateji"
+    ],
+    "invalidation_rationale": [
+      "Stop-loss 331.9196 — entry'den 2.0255 uzakta"
+    ],
+    "target_rationale": [
+      "Hedef 336.9832 — 1.5:1 R:R"
+    ],
+    "regime_context": "UPTREND",
+    "agreement_analysis": {
+      "total_strategies": 12,
+      "consensus": "LONG",
+      "agreement_score": 0,
+      "direction_counts": {},
+      "family_breakdown": {}
+    },
+    "reward_risk": {
+      "reward_risk": 1.5,
+      "reward": 3.0382,
+      "risk": 2.0255
+    },
+    "atr_pct": 0.303,
+    "research_flags": [
+      "YUKSEK_VOLATILITE: ATR geniş, invalidation uzakta",
+      "RESEARCH_ONLY: canli islem yok"
+    ]
+  },
+  "confidence": {
+    "score": 0.686,
+    "factors": {
+      "supporting_evidence": 1.0,
+      "conflicting_evidence": 1.0,
+      "regime_compatibility": 0.85,
+      "structure_quality": 0.4,
+      "entry_quality": 0.8,
+      "risk_reward_feasibility": 0.55,
+      "historical_validation": 0.2,
+      "strategy_agreement": 0.3,
+      "invalidation_clarity": 1.0,
+      "formation_chain": 0.833
+    },
+    "max_possible": 1.0
+  },
+  "quality": {
+    "overall": 0.686,
+    "breakdown": {
+      "supporting_evidence": 1.0,
+      "conflicting_evidence": 1.0,
+      "regime_compatibility": 0.85,
+      "structure_quality": 0.4,
+      "entry_quality": 0.8,
+      "risk_reward_feasibility": 0.55,
+      "historical_validation": 0.2,
+      "strategy_agreement": 0.3,
+      "invalidation_clarity": 1.0,
+      "formation_chain": 0.833
+    },
+    "flags": [
+      "YUKSEK_VOLATILITE: ATR geniş, invalidation uzakta",
+      "RESEARCH_ONLY: canli islem yok"
+    ],
+    "verdict": "MODERATE_SETUP"
+  },
+  "engine": "MARKETHQ_RESEARCH_SETUP_ENGINE",
+  "version": "V1",
+  "research_only": true,
+  "generated_at": "2026-09-16T17:07:31.712263"
+}

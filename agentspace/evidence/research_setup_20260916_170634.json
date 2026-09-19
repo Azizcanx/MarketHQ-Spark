@@ -1,0 +1,210 @@
+{
+  "setup": {
+    "setup_id": "setup_1h_20260916_170634",
+    "symbol": "THYAO.IS",
+    "timeframe": "1h",
+    "direction": "SHORT",
+    "entry_price": 271.0,
+    "entry_zone": [
+      270.26400547466375,
+      271.73599452533625
+    ],
+    "atr": 2.9439781013450173,
+    "regime": "DOWNTREND",
+    "supporting": [
+      "ema_trend_v1",
+      "supertrend_v1",
+      "adx_v1",
+      "smc_structure_v1"
+    ],
+    "opposing": [
+      "rsi_reversal_v1"
+    ],
+    "agreement": {
+      "long": 1,
+      "short": 4,
+      "neutral": 7,
+      "consensus": "SHORT",
+      "conflict": true,
+      "total": 12,
+      "share": 0.333,
+      "weighted": {
+        "lean": "SHORT",
+        "long_w": 0.44,
+        "short_w": 3.98,
+        "regime": "DOWNTREND",
+        "demoted": [
+          "ema_trend_v1",
+          "adx_v1",
+          "smc_structure_v1"
+        ]
+      }
+    },
+    "strategies": [
+      {
+        "strategy_id": "ema_trend_v1",
+        "direction": "SHORT",
+        "confidence": 1.0,
+        "reason": "EMA20(283.98)<EMA50(291.05)",
+        "family": "trend"
+      },
+      {
+        "strategy_id": "rsi_reversal_v1",
+        "direction": "LONG",
+        "confidence": 0.679739429240288,
+        "reason": "RSI 9.6<30 oversold",
+        "family": "mean_reversion"
+      },
+      {
+        "strategy_id": "donchian_breakout_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "kanal ici",
+        "family": "breakout"
+      },
+      {
+        "strategy_id": "supertrend_v1",
+        "direction": "SHORT",
+        "confidence": 0.7,
+        "reason": "SuperTrend SHORT",
+        "family": "trend"
+      },
+      {
+        "strategy_id": "adx_v1",
+        "direction": "SHORT",
+        "confidence": 1.0,
+        "reason": "ADX 50.3 -DI>+DI",
+        "family": "trend"
+      },
+      {
+        "strategy_id": "vwap_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "VWAP yok",
+        "family": "volume"
+      },
+      {
+        "strategy_id": "bollinger_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "BB ici",
+        "family": "mean_reversion"
+      },
+      {
+        "strategy_id": "atr_breakout_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "genisleme yok",
+        "family": "breakout"
+      },
+      {
+        "strategy_id": "stoch_reversal_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "%K 4.2 notr",
+        "family": "mean_reversion"
+      },
+      {
+        "strategy_id": "rs_benchmark_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "benchmark yok",
+        "family": "relative"
+      },
+      {
+        "strategy_id": "smc_structure_v1",
+        "direction": "SHORT",
+        "confidence": 0.55,
+        "reason": "BOS asagi (sweepsiz devam)",
+        "event": "BOS",
+        "invalidation": 294.0443978101345,
+        "target": 224.91120437973098,
+        "family": "structure"
+      },
+      {
+        "strategy_id": "or_breakout_v1",
+        "direction": "NEUTRAL",
+        "confidence": 0.0,
+        "reason": "kapanış aralık içinde (269.71–274.29)",
+        "family": "breakout"
+      }
+    ],
+    "research_only": true,
+    "invalidation": 276.88795620269,
+    "target": 262.16806569596497,
+    "invalidation_rule": "SHORT iptal: kapanis stop (276.88795620269) disi",
+    "target_rule": "ATR x3.0 hedef (262.16806569596497)"
+  },
+  "model": "SetupModel(setup_id='setup_1h_20260916_170634', symbol='THYAO.IS', timeframe='1h', generated_at='2026-09-16T17:06:34.169589', market=MarketInfo(symbol='THYAO.IS', market='crypto', exchange='', data_source='yfinance'), timeframe_info=TimeframeInfo(timeframe='1h', bar_count=530, date_range_start='', date_range_end=''), regime=RegimeInfo(regime='DOWNTREND', confidence=0.8, sma_fast=286.2625, sma_slow=294.52, detail='SMA_FAST=286.26 < SMA_SLOW=294.52'), bias=BiasInfo(direction='SHORT', bias_strength=0, reason='SHORT konsensüsü — 0 strateji'), structure=StructureInfo(has_structure=True, structure_type='', swing_highs=[{'price': 299.0, 'idx': 456}, {'price': 306.75, 'idx': 478}, {'price': 302.75, 'idx': 501}, {'price': 299.0, 'idx': 508}, {'price': 293.75, 'idx': 519}], swing_lows=[{'price': 295.75, 'idx': 469}, {'price': 297.0, 'idx': 492}, {'price': 296.0, 'idx': 506}, {'price': 290.0, 'idx': 514}, {'price': 274.0, 'idx': 523}], last_swing_high=293.75, last_swing_low=274.0, displacement=0.0, displacement_quality='none'), liquidity=LiquidityInfo(buy_side_liquidity=297.75, sell_side_liquidity=270.0, liquidity_sweep_detected=False, liquidity_side='', sweep_distance_atr=0.0, description='buy-side likidite: 297.7500; sell-side likidite: 270.0000'), setup_type='indicator_downtrend_short', entry_zone=EntryZone(center=271.0, low=270.26400547466375, high=271.73599452533625, width_atr=0.5, source='atr_based', quality='medium', touches=1), confirmation=Confirmation(strategy_count=12, strategies=[{'id': 'ema_trend_v1', 'direction': 'SHORT', 'confidence': 1.0}, {'id': 'rsi_reversal_v1', 'direction': 'LONG', 'confidence': 0.679739429240288}, {'id': 'donchian_breakout_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'supertrend_v1', 'direction': 'SHORT', 'confidence': 0.7}, {'id': 'adx_v1', 'direction': 'SHORT', 'confidence': 1.0}, {'id': 'vwap_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'bollinger_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'atr_breakout_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'stoch_reversal_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'rs_benchmark_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}, {'id': 'smc_structure_v1', 'direction': 'SHORT', 'confidence': 0.55}, {'id': 'or_breakout_v1', 'direction': 'NEUTRAL', 'confidence': 0.0}], family_agreement={}, agreement_score=0, strongest_indicator='', disqualifiers=[], family_conflicts=[]), invalidation=InvalidationLevel(price=276.88795620269, distance_atr=1.9999999999999951, type='structural', clarity='clear', reasoning='ATR×2.0 stop-loss — 276.8880'), targets=Targets(primary=TargetLevel(price=262.16806569596497, distance_atr=2.999999999999993, type='ATR_target', priority='primary', reasoning='ATR×3.0 hedef — 262.1681'), secondary=None, trailing=None), risk_reward=RiskReward(reward_risk_ratio=1.5, reward=8.8319, risk=5.888, breakeven_age=0.5, feasibility='medium'), supporting_strategies=['ema_trend_v1', 'supertrend_v1', 'adx_v1', 'smc_structure_v1'], conflicting_strategies=['rsi_reversal_v1'], evidence=Evidence(supporting=[{'source': 'ema_trend_v1', 'type': 'strategy'}, {'source': 'supertrend_v1', 'type': 'strategy'}, {'source': 'adx_v1', 'type': 'strategy'}, {'source': 'smc_structure_v1', 'type': 'strategy'}], conflicting=[{'source': 'rsi_reversal_v1', 'type': 'strategy'}], neutral=[], evidence_score=0), historical_validation=HistoricalValidation(available=False, similar_count=0, win_rate=None, avg_return=None, avg_return_20d=None, best_return=None, worst_return=None, regime_match='DOWNTREND', lookup_method='setup_signature', notes='Yetersiz veri (0/3 örnek)'), quality=QualityScore(overall=0.643, supporting_evidence=0.8, conflicting_evidence=0.7, regime_compatibility=0.85, structure_quality=0.4, entry_quality=0.8, risk_reward_feasibility=0.55, historical_validation=0.2, strategy_agreement=0.3, invalidation_clarity=1.0, breakdown={'supporting_evidence': 0.8, 'conflicting_evidence': 0.7, 'regime_compatibility': 0.85, 'structure_quality': 0.4, 'entry_quality': 0.8, 'risk_reward_feasibility': 0.55, 'historical_validation': 0.2, 'strategy_agreement': 0.3, 'invalidation_clarity': 1.0, 'formation_chain': 0.833}, flags=['YUKSEK_VOLATILITE: ATR geniş, invalidation uzakta', 'RESEARCH_ONLY: canli islem yok']), reasoning=Reasoning(entry_rationale=['Entry zone [270.2640, 271.7360] — ATR bazli ±0.50x ATR', 'Rejim: DOWNTREND — asagi direction', 'Strateji destegi: 4/12 strateji'], invalidation_rationale=[\"Stop-loss 276.8880 — entry'den 5.8880 uzakta\"], target_rationale=['Hedef 262.1681 — 1.5:1 R:R'], regime_context='DOWNTREND', agreement_summary='SHORT (0%)', key_insight='Setup: indicator_downtrend_short | Regime: DOWNTREND | Direction: SHORT', warnings=[]), invalidation_conditions=InvalidationConditions(price_condition='Kapanis 276.8880 altina cikarsa iptal', time_condition='', alternative_signal='', manual_override=''), outcome=Outcome(executed=False, entry_price=None, exit_price=None, pnl_pct=None, hit_target=False, hit_invalidation=False, duration_bars=0, max_favorable=None, max_adverse=None), learning_metadata=LearningMetadata(setup_type_signature='indicator_downtrend_short', regime='DOWNTREND', confirmation_combo='', learning_priority=0.643, next_research_question='Bu setup tipi (indicator_downtrend_short) DOWNTREND ortaminda ne kadar surekli calisir?', strategy_evolution_hint=''), research_only=True, engine='MARKETHQ_RESEARCH_SETUP_ENGINE', version='V1')",
+  "why_panel": {
+    "entry_rationale": [
+      "Entry zone [270.2640, 271.7360] — ATR bazli ±0.50x ATR",
+      "Rejim: DOWNTREND — asagi direction",
+      "Strateji destegi: 4/12 strateji"
+    ],
+    "invalidation_rationale": [
+      "Stop-loss 276.8880 — entry'den 5.8880 uzakta"
+    ],
+    "target_rationale": [
+      "Hedef 262.1681 — 1.5:1 R:R"
+    ],
+    "regime_context": "DOWNTREND",
+    "agreement_analysis": {
+      "total_strategies": 12,
+      "consensus": "SHORT",
+      "agreement_score": 0,
+      "direction_counts": {},
+      "family_breakdown": {}
+    },
+    "reward_risk": {
+      "reward_risk": 1.5,
+      "reward": 8.8319,
+      "risk": 5.888
+    },
+    "atr_pct": 1.086,
+    "research_flags": [
+      "YUKSEK_VOLATILITE: ATR geniş, invalidation uzakta",
+      "RESEARCH_ONLY: canli islem yok"
+    ]
+  },
+  "confidence": {
+    "score": 0.643,
+    "factors": {
+      "supporting_evidence": 0.8,
+      "conflicting_evidence": 0.7,
+      "regime_compatibility": 0.85,
+      "structure_quality": 0.4,
+      "entry_quality": 0.8,
+      "risk_reward_feasibility": 0.55,
+      "historical_validation": 0.2,
+      "strategy_agreement": 0.3,
+      "invalidation_clarity": 1.0,
+      "formation_chain": 0.833
+    },
+    "max_possible": 1.0
+  },
+  "quality": {
+    "overall": 0.643,
+    "breakdown": {
+      "supporting_evidence": 0.8,
+      "conflicting_evidence": 0.7,
+      "regime_compatibility": 0.85,
+      "structure_quality": 0.4,
+      "entry_quality": 0.8,
+      "risk_reward_feasibility": 0.55,
+      "historical_validation": 0.2,
+      "strategy_agreement": 0.3,
+      "invalidation_clarity": 1.0,
+      "formation_chain": 0.833
+    },
+    "flags": [
+      "YUKSEK_VOLATILITE: ATR geniş, invalidation uzakta",
+      "RESEARCH_ONLY: canli islem yok"
+    ],
+    "verdict": "MODERATE_SETUP"
+  },
+  "engine": "MARKETHQ_RESEARCH_SETUP_ENGINE",
+  "version": "V1",
+  "research_only": true,
+  "generated_at": "2026-09-16T17:06:34.169937"
+}
